@@ -104,8 +104,6 @@ module.exports.run = async (client, message, args) => {
             var t = new Date();
             let lTime = t.toString()
             let linkTime = lTime.split(' ').join('').replace('(CEST)', '')
-            
-            console.log(linkTime)
 
             //create NS-reisplanner URL
             let tripLink = "https://www.ns.nl/reisplanner#/?vertrek=" + stationcodeFrom + "&vertrektype=treinstation&aankomst=" + stationcodeTo + "&aankomsttype=treinstation&type=vertrek"
