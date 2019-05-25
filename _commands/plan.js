@@ -114,7 +114,7 @@ module.exports.run = async (client, message, args) => {
             if (nstjson.message) {
                 let badtrip = nstjson.errors[0].message
 
-                NS_trip_embed.addField("Melding", badtrip + "\n of deze is verkeerd geschreven.")
+                NS_trip_embed.addField("⚠ Melding", badtrip + "\n of deze is verkeerd geschreven.")
 
                 NS_trip_embed.setTimestamp()
                 NS_trip_embed.setColor(defaultconfig.embed_color);
