@@ -11,15 +11,15 @@ module.exports.run = async (client, message, args) => {
 
     fetch(endpoint, {
         headers: {
-            'x-api-key': "bUgJ4B3IHr1gvFUaDlLSUaV7DTkC3GzR3LP3NIMy"
+            'x-api-key': process.env.NS
         }
     }).then(function (response) {
         return response.json();
     }).then(function (nsjson) {
 
         // fetch results
-        let data = JSON.stringify(nsjson);
-        fs.writeFileSync('./json_export/ns_api_werk.json', data);
+        // let data = JSON.stringify(nsjson);
+        // fs.writeFileSync('./json_export/ns_api_werk.json', data);
 
         let NS_werk_embed = new Discord.RichEmbed()
             .setTitle("NS Werkzaamheden")

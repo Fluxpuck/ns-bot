@@ -3,8 +3,7 @@
         {
             "false": [
                 "'T Harde",
-                "Harde 'T",
-                "kaas"
+                "Harde 'T"
             ],
             "correct": "'t Harde"
         },
@@ -14,6 +13,20 @@
                 "Beek-e"
             ],
             "correct": "Beek-Elsloo"
+        },
+        {
+            "false": [
+                "Gilze-rijen"
+            ],
+            "correct": "Gilze-Rijen"
+        },
+        {
+            "false": [
+                "Strijp-s",
+                "Strijp s",
+                "Strijp S"
+            ],
+            "correct": "Strijp-S"
         }
     ]
 }

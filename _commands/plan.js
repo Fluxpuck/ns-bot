@@ -56,8 +56,8 @@ module.exports.run = async (client, message, args) => {
     }).then(function (nsjson) {
 
         //fetch results
-        let data = JSON.stringify(nsjson);
-        fs.writeFileSync('./json_export/ns_api_station.json', data);
+        // let data = JSON.stringify(nsjson);
+        // fs.writeFileSync('./json_export/ns_api_station.json', data);
 
         //fetch stationcode results
         let payloads = nsjson.payload
@@ -97,16 +97,18 @@ module.exports.run = async (client, message, args) => {
         }).then(function (nstjson) {
 
             //fetch results
-            let data = JSON.stringify(nstjson);
-            fs.writeFileSync('./json_export/ns_api_trip.json', data);
+            // let data = JSON.stringify(nstjson);
+            // fs.writeFileSync('./json_export/ns_api_trip.json', data);
 
              //correct timestamp for NS-reisplanner URL
             var t = new Date();
             let lTime = t.toString()
-            let linkTime = lTime.split(' ').join('').replace('(CentralEuropeanSummerTime)', '')
+            let linkTime = lTime.split(' ').join('').replace('(CEST)', '')
+            
+            console.log(linkTime)
 
             //create NS-reisplanner URL
-            let tripLink = "https://www.ns.nl/reisplanner#/?vertrek=" + stationcodeFrom + "&vertrektype=treinstation&aankomst=" + stationcodeTo + "&aankomsttype=treinstation&type=vertrek&tijd=" + linkTime
+            let tripLink = "https://www.ns.nl/reisplanner#/?vertrek=" + stationcodeFrom + "&vertrektype=treinstation&aankomst=" + stationcodeTo + "&aankomsttype=treinstation&type=vertrek"
 
             let NS_trip_embed = new Discord.RichEmbed()
                 .setTitle("NS Reisplanner")
