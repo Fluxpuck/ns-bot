@@ -1,2 +1,4 @@
-# ns-bot
-Nederlandse Spoorwegen discord-bot
+NS Discord bot
+=========================
+
+Nederlandse Spoorwegen discord bot

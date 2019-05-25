@@ -1,0 +1,19 @@
+{
+    "exception": [
+        {
+            "false": [
+                "'T Harde",
+                "Harde 'T",
+                "kaas"
+            ],
+            "correct": "'t Harde"
+        },
+        {
+            "false": [
+                "Beek-elsloo",
+                "Beek-e"
+            ],
+            "correct": "Beek-Elsloo"
+        }
+    ]
+}
