@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
         let help_embed = new Discord.RichEmbed()
             .setTitle("Help!")
             .setDescription("Haal de werkzaamheden of storingen op of plan een binnenlandse reis! Meer features zijn in ontwikkeling... Gebruik `!help [categorie]` voor meer informatie per catergorie. Standaard prefix is `!` \n_______________________________")
-            .addField("SETUP", "`!setprefix []` \n`!setchannel []` \n`!removechannel []`", true)
+            .addField("SETUP [admin]", "`!setprefix []` \n`!setchannel []` \n`!removechannel []`", true)
             .addField("INFO", "`!info` \n`!server`", true)
             .addField("NS", "`!storing` \n`!werk` \n`!plan [station] > [station]`", true)
             .setColor(defaultconfig.embed_color)
@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
         return message.channel.send(help_embed)
     } else if (args == "setup") {
         let help_embed = new Discord.RichEmbed()
-            .setTitle("Setup Commands")
+            .setTitle("Setup Commands [admin]")
             .setDescription("_______________________________")
             .addField("SETUP commands", "`!setprefix []` \n`!setchannel []` \n`!removechannel` \n_______________________________")
             .addField("!setprefix []", "Typ `!setprefix` gevolgd door het gewenste prefix ")

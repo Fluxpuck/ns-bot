@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
     //sending and editting Ping message
     return message.channel.send("Pinging ...")
         .then((msg) => {
-            msg.edit("Pong! " + (Date.now() - msg.createdTimestamp) + "ms \nGem. ping is " + client.ping + "ms")
+            msg.edit("Pong! " + (Date.now() - msg.createdTimestamp) + "ms \nGem. ping is " + Math.round(client.ping) + "ms")
         })
 
 }
