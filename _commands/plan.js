@@ -100,9 +100,13 @@ module.exports.run = async (client, message, args) => {
             let data = JSON.stringify(nstjson);
             fs.writeFileSync('./json_export/ns_api_trip.json', data);
 
-            //create NS-reisplanner URL
+             //correct timestamp for NS-reisplanner URL
             var t = new Date();
-            let tripLink = "https://www.ns.nl/reisplanner#/?vertrek=" + stationcodeFrom + "&vertrektype=treinstation&aankomst=" + stationcodeTo + "&aankomsttype=treinstation&type=vertrek&tijd=" + time(t)
+            let lTime = t.toString()
+            let linkTime = lTime.split(' ').join('').replace('(CentralEuropeanSummerTime)', '')
+
+            //create NS-reisplanner URL
+            let tripLink = "https://www.ns.nl/reisplanner#/?vertrek=" + stationcodeFrom + "&vertrektype=treinstation&aankomst=" + stationcodeTo + "&aankomsttype=treinstation&type=vertrek&tijd=" + linkTime
 
             let NS_trip_embed = new Discord.RichEmbed()
                 .setTitle("NS Reisplanner")
