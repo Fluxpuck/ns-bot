@@ -9,7 +9,7 @@ Huidige features:
 - `Binnenlandse reizen plannen`
 
 In ontwikkeling:
-- `Geautomatiseerde melding bij storing(en), en/of wijzigingen aan storing(en)`
+- `Geautomatiseerd bericht bij storing(en), en/of wijzigingen aan storing(en)`
 - `Indien storing in de !plan(ner) geen reis weergeven maar storing`
 
 Voor meer informatie check `!help`

@@ -1,9 +1,14 @@
 const botconfig = require("../botconfig.json")
 const defaultconfig = require("../_server/default-config.json")
 const Discord = require("discord.js")
+const fs = require('fs');
 const client = new Discord.Client({ disableEveryone: true })
 
 module.exports.run = async (client, message, args) => {
+  
+    //default prefix
+    let prefixes = JSON.parse(fs.readFileSync("./_server/prefixes.json", "utf8"))
+    let prefix = prefixes[message.guild.id].prefixes
 
     if (!args.length) {
         let help_embed = new Discord.RichEmbed()

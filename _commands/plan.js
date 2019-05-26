@@ -10,9 +10,14 @@ module.exports.run = async (client, message, args) => {
     //message processor
     let messageArr = args.toString()
     let splitArr = messageArr.split(">")
-    let stationFrom = capitalize(splitArr[0].replace(/[&\/\\#,+()$~%.":*?<>{}]/g, ' ').trim())
-    let stationTo = capitalize(splitArr[1].replace(/[&\/\\#,+()$~%.":*?<>{}]/g, ' ').trim())
-
+    let stationFrom
+    let stationTo
+    //prevents console errors if split type is wrong
+    if (splitArr.length >= 2){
+        stationFrom = capitalize(splitArr[0].replace(/[&\/\\#,+()$~%.":*?<>{}]/g, ' ').trim())
+        stationTo = capitalize(splitArr[1].replace(/[&\/\\#,+()$~%.":*?<>{}]/g, ' ').trim())
+    } else { return }
+     
     //check for exceptions
     function checkFromStation(station) {
         return station == stationFrom
