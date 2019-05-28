@@ -18,8 +18,8 @@ module.exports.run = async (client, message, args) => {
     }).then(function (nsjson) {
 
         // fetch results
-        // let data = JSON.stringify(nsjson);
-        // fs.writeFileSync('./json_export/ns_api_storing.json', data);
+        let data = JSON.stringify(nsjson);
+        fs.writeFileSync('./json_export/ns_api_storing.json', data);
 
         let NS_storing_embed = new Discord.RichEmbed()
             .setTitle("NS Storingen")

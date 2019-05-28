@@ -18,6 +18,18 @@ module.exports.run = async (client, message, args) => {
         stationTo = capitalize(splitArr[1].replace(/[&\/\\#,+()$~%.":*?<>{}]/g, ' ').trim())
     } else { return }
      
+    //check for stations with -
+    if (stationFrom.indexOf('-') > -1) {
+        let fromArr = stationFrom.split("-")
+        let tempFrom = capitalize(fromArr[0]) + "-" + capitalize(fromArr[1])
+        stationFrom = tempFrom.replace(/[&\/\\#,+()$~%.":*?<>{}]/g, ' '.trim())
+    }
+    if (stationTo.indexOf('-') > -1) {
+        let toArr = stationTo.split("-")
+        let tempTo = capitalize(toArr[0]) + "-" + capitalize(toArr[1])
+        stationTo = tempTo.replace(/[&\/\\#,+()$~%.":*?<>{}]/g, ' '.trim())
+    }
+  
     //check for exceptions
     function checkFromStation(station) {
         return station == stationFrom
@@ -61,8 +73,8 @@ module.exports.run = async (client, message, args) => {
     }).then(function (nsjson) {
 
         //fetch results
-        // let data = JSON.stringify(nsjson);
-        // fs.writeFileSync('./json_export/ns_api_station.json', data);
+        let data = JSON.stringify(nsjson);
+        fs.writeFileSync('./json_export/ns_api_station.json', data);
 
         //fetch stationcode results
         let payloads = nsjson.payload
@@ -102,8 +114,8 @@ module.exports.run = async (client, message, args) => {
         }).then(function (nstjson) {
 
             //fetch results
-            // let data = JSON.stringify(nstjson);
-            // fs.writeFileSync('./json_export/ns_api_trip.json', data);
+            let data = JSON.stringify(nstjson);
+            fs.writeFileSync('./json_export/ns_api_trip.json', data);
 
              //correct timestamp for NS-reisplanner URL
             var t = new Date();

@@ -5,6 +5,7 @@ const Discord = require("discord.js")
 const fetch = require("node-fetch");
 const fs = require('fs');
 const client = new Discord.Client({ disableEveryone: true })
+client.commands = new Discord.Collection();
 
 // => Keeps the bot online
 const http = require('http');
@@ -37,9 +38,11 @@ fs.readdir("./_commands/", (err, files) => {
     console.log(`Commands loading... \n=>`)
     jsfile.forEach((f, i) => {
         let props = require(`./_commands/${f}`);
-        console.log(`${f} loaded!`);
+        console.log((i + 1) + ` - ${f} loaded!`);
         client.commands.set(props.help.name, props);
-    });
+    })
+  
+    console.log(`=> \n` + jsfile.length + ` commands were loaded correctly!`);
 
 });
 
@@ -62,7 +65,7 @@ client.on("ready", async () => {
 
     //bot activity
     client.user.setActivity('with Trains || !help', { type: 'PLAYING' })
-        .then(presence => console.log(`Bot activity set to ${presence.game ? presence.game.name : 'none'}`))
+        // .then(presence => console.log(`Bot activity set to ${presence.game ? presence.game.name : 'none'}`))
         .catch(console.error)
 
 })

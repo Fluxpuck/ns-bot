@@ -2,31 +2,11 @@
     "exception": [
         {
             "false": [
+                "T'harde",
                 "'T Harde",
                 "Harde 'T"
             ],
             "correct": "'t Harde"
-        },
-        {
-            "false": [
-                "Beek-elsloo",
-                "Beek-e"
-            ],
-            "correct": "Beek-Elsloo"
-        },
-        {
-            "false": [
-                "Gilze-rijen"
-            ],
-            "correct": "Gilze-Rijen"
-        },
-        {
-            "false": [
-                "Strijp-s",
-                "Strijp s",
-                "Strijp S"
-            ],
-            "correct": "Strijp-S"
         }
     ]
 }
