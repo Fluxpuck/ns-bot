@@ -7,6 +7,12 @@
                 "Harde 'T"
             ],
             "correct": "'t Harde"
+        },
+        {
+            "false": [
+                "Bergen Op Zoom"
+            ],
+            "correct": "Bergen op Zoom"
         }
     ]
 }
