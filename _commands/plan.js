@@ -1,11 +1,21 @@
 const botconfig = require("../botconfig.json")
 const defaultconfig = require("../_server/default-config.json")
+var mysql = require('mysql');
 const fetch = require("node-fetch");
 const fs = require('fs');
 const Discord = require("discord.js")
 const client = new Discord.Client({ disableEveryone: true })
 
 module.exports.run = async (client, message, args) => {
+  
+    //database connection
+    var conn = mysql.createConnection({
+        host: process.env.HOSTIP,
+        user: process.env.DBLOGIN,
+        password: process.env.DBPASSWORD,
+        database: botconfig.db_select,
+        port: botconfig.port
+    });
 
     //message processor
     let messageArr = args.toString()
@@ -197,6 +207,43 @@ module.exports.run = async (client, message, args) => {
     }).catch(function (response) {
         console.error("Er ging iets mis met het ophalen van de treincode")
     })
+  
+    conn.connect(function (err) {
+        if (err) throw err;
+
+        conn.query("SELECT * FROM train_history WHERE user = " + message.author.id + "", function (err, result, fields) {
+            if (err) throw err;
+
+            //insert in database if there is less then 5
+            if (result.length < 5) {
+                console.log("----->");
+                var sql = "INSERT INTO train_history (user, trip) VALUES ('" + message.author.id + "' , '" + stationFrom + " > " + stationTo + "')";
+                conn.query(sql, function (err, result) {
+                    if (err) throw err;
+                    console.log("Writen in database with ID: " + result.insertId);
+                });
+            }
+
+            //if there are equal or more than 5 results, remove the last one and insert new one
+            if (result.length >= 5) {
+                console.log("----->");
+                let firstID = result[0].ID
+                var sql = "DELETE FROM train_history WHERE ID = " + firstID + "";
+                conn.query(sql, function (err, result) {
+                    if (err) throw err;
+                    console.log("Removed " + result.affectedRows + " trip history");
+                });
+
+                var sql = "INSERT INTO train_history (user, trip) VALUES ('" + message.author.id + "' , '" + stationFrom + " > " + stationTo + "')";
+                conn.query(sql, function (err, result) {
+                    if (err) throw err;
+                    console.log("Writen in database with ID: " + result.insertId);
+                });
+            }
+
+        });
+
+    });
 
 }
 
