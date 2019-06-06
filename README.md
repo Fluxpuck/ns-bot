@@ -6,9 +6,11 @@ De **NS bot** is een Nederlandse Spoorwegen discord bot.
 Huidige features:
 - `Storingen ophalen`
 - `Werkzaamheden ophalen`
-- `Binnenlandse reizen plannen`
+- `NS reizen plannen`
+- `Reisgeschiedenis, 5 laatste geplande reizen`
 
 In ontwikkeling:
+- `Snel een reis plannen aan de hand van je reisgeschiedenis`
 - `Geautomatiseerd bericht bij storing(en), en/of wijzigingen aan storing(en)`
 - `Indien storing in de !plan(ner) geen reis weergeven maar storing`
 
