@@ -8,9 +8,9 @@ Huidige features:
 - `Werkzaamheden ophalen`
 - `NS reizen plannen`
 - `Reisgeschiedenis, 5 laatste geplande reizen`
+- `Snel een reis plannen aan de hand van je reisgeschiedenis`
 
 In ontwikkeling:
-- `Snel een reis plannen aan de hand van je reisgeschiedenis`
 - `Geautomatiseerd bericht bij storing(en), en/of wijzigingen aan storing(en)`
 - `Indien storing in de !plan(ner) geen reis weergeven maar storing`
 

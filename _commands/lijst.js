@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
             .setTitle("Geschiedenis van " + message.member.user.tag)
             .setDescription("Hier volgen jouw 5 laatste reisplanningen: \n___")
 
-        conn.query("SELECT * FROM train_history WHERE user = " + message.author.id + "", function (err, result, fields) {
+        conn.query("SELECT * FROM train_history WHERE user = " + message.author.id + " ORDER BY id DESC", function (err, result, fields) {
             if (err) throw err;
 
             for (let i = 0; i < result.length; i++) {
@@ -33,7 +33,7 @@ module.exports.run = async (client, message, args) => {
                 if (result.lenght < 0) {
                     NS_history_embed.addField("Hallo!", "Je hebt nog geen reizen gepland. \nGebruik `!plan [station] > [station]` om een reis te plannen.")
                 } else {
-                    NS_history_embed.addField("[" + (i + 1) + "] " + db_trip, "Datum " + date(db_time) + "\n__")
+                    NS_history_embed.addField("[" + (i + 1) + "] " + db_trip, "Datum: " + date(db_time) + "\n__")
                 }
             }
 

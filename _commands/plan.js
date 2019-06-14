@@ -211,24 +211,44 @@ module.exports.run = async (client, message, args) => {
     conn.connect(function (err) {
         if (err) throw err;
 
-        conn.query("SELECT * FROM train_history WHERE user = " + message.author.id + "", function (err, result, fields) {
+        conn.query("SELECT * FROM train_history WHERE user = " + message.author.id + " ORDER BY ID DESC", function (err, result, fields) {
             if (err) throw err;
 
-            //insert in database if there is less then 5
-            if (result.length < 5) {
+            let db_trip = stationFrom + " > " + stationTo
+
+            //grab trip ID & count from database
+            let id
+            let count
+            for (let i = 0; i < result.length; i++) {
+                let results = result[i]
+                if (results.trip == db_trip) {
+                    id = results.ID
+                    count = results.update_count
+                }
+            }
+
+            //if values ID & count are set
+            if (id && count) {
+                //UPDATE timestamp if trip is already in DB
+                console.log("----->");
+                var sql = "UPDATE train_history SET update_count = " + (count + 1) + " WHERE ID = " + id + "";
+                conn.query(sql, function (err, result) {
+                    if (err) throw err;
+                    console.log("Updated database row with ID: " + id + ",\nUpdate count is now " + (count + 1));
+                });
+            } else if (result.length < 5) {
+                //insert in database if there is less then 5
                 console.log("----->");
                 var sql = "INSERT INTO train_history (user, trip) VALUES ('" + message.author.id + "' , '" + stationFrom + " > " + stationTo + "')";
                 conn.query(sql, function (err, result) {
                     if (err) throw err;
                     console.log("Writen in database with ID: " + result.insertId);
                 });
-            }
-
-            //if there are equal or more than 5 results, remove the last one and insert new one
-            if (result.length >= 5) {
+            } else if (result.length >= 5) {
+                //if there are equal or more than 5 results, remove the last one and insert new one
                 console.log("----->");
                 let firstID = result[0].ID
-                var sql = "DELETE FROM train_history WHERE ID = " + firstID + "";
+                var sql = "DELETE FROM train_history WHERE ID = " + firstID + " ORDER BY ID DESC";
                 conn.query(sql, function (err, result) {
                     if (err) throw err;
                     console.log("Removed " + result.affectedRows + " trip history");
