@@ -62,7 +62,7 @@ module.exports.run = async (client, message, args) => {
             .addField("!werk", "Typ `!werk` om de actuele werkzaamheden op het spoor in Nederland op te halen")
             .addField("!plan [station] > [station]", "Om een reis te plannen, typ `!plan` gevold door het vertrek station `[station]` een ` > ` en het gewenste aankomst station `[station]`")
             .addField("!lijst", "Typ `!lijst` om jouw reis-geschiedenis op te halen. \nHiermee kun je eenvoudig de reis herplannen.")
-            .addField("!snel [1-5]", "Om een eerdere reis opniew te plannen, haal de `!lijst` op en typ vervolgens `!snel` gevolgd door een het nummer voor de reis uit jouw reis-geschiedenis")
+            .addField("!snel [1-5]", "Om een eerdere reis opniew te plannen, haal de `!lijst` op en typ vervolgens `!snel` gevolgd door het gewenste nummer voor de reis uit jouw reis-geschiedenis")
             .setColor(defaultconfig.embed_color)
             .setThumbnail(client.user.avatarURL)
         // .setTimestamp()
