@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
         .setColor(defaultconfig.embed_color)
         .setThumbnail(client.user.avatarURL)
         .setTimestamp()
-        .setFooter(client.user.username, client.user.avatarURL)
+        .setFooter(client.user.username, defaultconfig.embed_emblem)
 
     return message.channel.send(info_embed)
 

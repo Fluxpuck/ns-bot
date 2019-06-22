@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
 
         let NS_werk_embed = new Discord.RichEmbed()
             .setTitle("NS Werkzaamheden")
-            .setDescription("De geplande werkzaamheden zijn als volgt. [NS Werkzaamheden](https://www.ns.nl/reisinformatie/werk-aan-het-spoor) \n_____")
+            .setDescription("De actuele werkzaamheden zijn als volgt. [NS Werkzaamheden](https://www.ns.nl/reisinformatie/werk-aan-het-spoor) \n_____")
 
         let payloads = nsjson.payload
         if (typeof payloads !== 'undefined' && payloads.length > 0) {
@@ -53,9 +53,9 @@ module.exports.run = async (client, message, args) => {
         }
 
         NS_werk_embed.setTimestamp()
-        NS_werk_embed.setThumbnail("http://customizedwear.nl/wp-content/uploads/2017/12/nederlandse-spoorwegen-ns-logo.png")
+        NS_werk_embed.setThumbnail(defaultconfig.embed_avatar)
         NS_werk_embed.setColor(defaultconfig.embed_color);
-        NS_werk_embed.setFooter(client.user.username, client.user.avatarURL);
+        NS_werk_embed.setFooter(client.user.username, defaultconfig.embed_emblem);
 
         message.channel.send(NS_werk_embed)
 

@@ -28,9 +28,9 @@ module.exports.run = async (client, message, args) => {
             .setTitle("Prefix is changed:")
             .setDescription("Prefix is now set to " + args[0])
             .setColor(defaultconfig.embed_color)
-            // .setThumbnail(client.user.avatarURL)
+            // .setThumbnail(defaultconfig.embed_avatar)
             .setTimestamp()
-            .setFooter(client.user.username, client.user.avatarURL)
+            .setFooter(client.user.username, defaultconfig.embed_emblem)
 
         message.channel.send(setprefix_embed)
 

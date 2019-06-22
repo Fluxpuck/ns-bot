@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
         .setThumbnail(message.guild.iconURL)
         .setColor(defaultconfig.embed_color)
         .setTimestamp()
-        .setFooter(client.user.username, client.user.avatarURL)
+        .setFooter(client.user.username, defaultconfig.embed_emblem)
 
     return message.channel.send(serverinfo_embed)
 

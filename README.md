@@ -1,7 +1,7 @@
-NS bot v2.3.1
+Sero v2.4.1
 =========================
 
-De **NS bot** is een Nederlandse Spoorwegen discord bot.
+**Sero** is een Nederlandse Spoorwegen discord bot.
 
 Huidige features:
 - `Storingen ophalen`
@@ -9,9 +9,9 @@ Huidige features:
 - `NS reizen plannen`
 - `Reisgeschiedenis, 5 laatste geplande reizen`
 - `Snel een reis plannen aan de hand van je reisgeschiedenis`
+- `Geplande werkzaamheden weergaven in bericht met pagina's`
 
 In ontwikkeling:
-- `Geplande werkzaamheden weergeven in bericht met pagina's`
 - `Geautomatiseerd bericht bij storing(en), en/of wijzigingen aan storing(en)`
 - `Indien storing in de !plan(ner) geen reis weergeven maar storing`
 

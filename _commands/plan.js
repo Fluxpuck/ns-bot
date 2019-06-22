@@ -188,7 +188,7 @@ module.exports.run = async (client, message, args) => {
                     }
 
                     NS_trip_embed.setTimestamp()
-                    NS_trip_embed.setThumbnail("http://customizedwear.nl/wp-content/uploads/2017/12/nederlandse-spoorwegen-ns-logo.png")
+                    NS_trip_embed.setThumbnail(defaultconfig.embed_avatar)
                     NS_trip_embed.setColor(defaultconfig.embed_color);
                     NS_trip_embed.setFooter(client.user.username, client.user.avatarURL);
 

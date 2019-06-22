@@ -21,9 +21,9 @@ module.exports.run = async (client, message, args) => {
         .setTitle("Default channel is removed!")
         .setDescription("Please note that the bot will be available in every channel now")
         .setColor(defaultconfig.embed_color)
-        // .setThumbnail(client.user.avatarURL)
+        // .setThumbnail(defaultconfig.embed_avatar)
         .setTimestamp()
-        .setFooter(client.user.username, client.user.avatarURL)
+        .setFooter(client.user.username, defaultconfig.embed_emblem)
 
     message.channel.send(removechannel_embed)
 

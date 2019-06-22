@@ -38,9 +38,9 @@ module.exports.run = async (client, message, args) => {
             }
 
             NS_history_embed.setTimestamp()
-            NS_history_embed.setThumbnail("http://customizedwear.nl/wp-content/uploads/2017/12/nederlandse-spoorwegen-ns-logo.png")
+            NS_history_embed.setThumbnail(defaultconfig.embed_avatar)
             NS_history_embed.setColor(defaultconfig.embed_color);
-            NS_history_embed.setFooter(client.user.username, client.user.avatarURL);
+            NS_history_embed.setFooter(client.user.username, defaultconfig.embed_emblem);
 
             message.channel.send(NS_history_embed)
 
