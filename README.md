@@ -9,7 +9,7 @@ Huidige features:
 - `NS reizen plannen`
 - `Reisgeschiedenis, 5 laatste geplande reizen`
 - `Snel een reis plannen aan de hand van je reisgeschiedenis`
-- `Geplande werkzaamheden weergaven in bericht met pagina's`
+- `Geplande werkzaamheden ophalen in bericht met pagina's`
 
 In ontwikkeling:
 - `Geautomatiseerd bericht bij storing(en), en/of wijzigingen aan storing(en)`
