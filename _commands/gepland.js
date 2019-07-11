@@ -132,7 +132,7 @@ module.exports.run = async (client, message, args) => {
                             });
                         })
                         .catch(collected => {
-                            message.reply("Je hebt geen gebruik gemaakt van de pagina's onder de Geplande Werkzaamheden. Druk de volgende keer op  ◀  of  ▶  om naar de volgende en vorige pagina te gaan.");
+                            message.reply("Je hebt geen gebruik gemaakt van de pagina's onder de Geplande Werkzaamheden. Druk de volgende keer op  ◀  of  ▶  om naar de vorige en volgende pagina te gaan.");
                         });
                 })
 

@@ -5,13 +5,14 @@ const fs = require('fs');
 const client = new Discord.Client({ disableEveryone: true })
 
 module.exports.run = async (client, message, args) => {
+  
+    //only allow admins & bot-owner to setup bot
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You've no access to this command.")
+    if (!message.sender === process.env.FLUXID) return message.channel.send("You have no access to this command.")
 
     if (!args.length) {
         message.channel.send("Please enter a prefix")
     } else {
-
-        //only allow admins to setup bot
-        if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You've no access to this command.")
 
         //parse JSON, edit prefixes, write file
         let prefixes = JSON.parse(fs.readFileSync("./_server/prefixes.json", "utf8"))

@@ -11,6 +11,11 @@ Huidige features:
 - `Snel een reis plannen aan de hand van je reisgeschiedenis`
 - `Geplande werkzaamheden ophalen in bericht met pagina's`
 
+Setup features:
+- `Uitgebreide help-commando`
+- `Prefix in help-commando veranderd mee met gekozen prefix voor de server`
+- `Kies een enkel tekst kanaal waar alle berichten van de bot naar verzonden worden`
+
 In ontwikkeling:
 - `Geautomatiseerd bericht bij storing(en), en/of wijzigingen aan storing(en)`
 - `Indien storing in de !plan(ner) geen reis weergeven maar storing`
