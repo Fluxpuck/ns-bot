@@ -45,8 +45,8 @@ module.exports.run = async (client, message, args) => {
             let name = monitor.friendly_name
 
             if (name === process.env.BOTNAME) {
-                let datetime = monitor.logs[0].datetime
-                let uptime = timeConversion(datetime)
+                let duration = monitor.logs[0].duration
+                let uptime = secondsConverter(duration)
 
                 info_embed.addField("Totale Uptime", uptime, true)
 
@@ -91,16 +91,10 @@ function date(date) {
     return day + ' ' + monthNames[monthIndex] + ' ' + year;
 }
 
-//convert date to hours
-function timeConversion(millisec) {
-    var seconds = (millisec / 1000).toFixed(0);
-    var minutes = (millisec / (1000 * 60)).toFixed(0);
-    var hours = (millisec / (1000 * 60 * 60)).toFixed(0);
-    if (seconds < 60) {
-        return seconds + " Sec";
-    } else if (minutes < 60) {
-        return minutes + " Min";
-    } else {
-        return hours + " Uur";
-    }
+//convert seconds to hours
+function secondsConverter(s) {
+    s = Number(s);
+    var h = Math.floor(s / 3600);
+    var hDisplay = h + " Uur"
+    return hDisplay;
 }
