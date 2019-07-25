@@ -10,11 +10,12 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "discord.js": "^11.4.2",
+    "discord.js": "^11.5.1",
     "fs": "^0.0.2",
-    "node-fetch": "^2.5.0",
+    "node-fetch": "^2.6.0",
     "express": "^4.16.4",
-    "mysql": "^2.17.1"
+    "mysql": "^2.17.1",
+    "request": "^2.88.0"
   },
   "engines": {
     "node": "8.4.0"
