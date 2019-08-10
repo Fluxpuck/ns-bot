@@ -1,6 +1,7 @@
 {
     "prefix": "!",
-    "version": "2.4.1",
+    "version": "2.5.0",
     "db_select": "mvdkeu1q_ns-bot-v2",
-    "port": "3306"
+    "port": "3306",
+    "morgan": "[:date[web]] ':method :url' HTTP/:http-version statuscode: :status, responsetime: :response-time[digits]ms ':user-agent'"
 }

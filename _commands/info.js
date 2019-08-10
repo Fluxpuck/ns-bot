@@ -91,10 +91,11 @@ function date(date) {
     return day + ' ' + monthNames[monthIndex] + ' ' + year;
 }
 
-//convert seconds to hours
+//convert seconds to hours + mins
 function secondsConverter(s) {
     s = Number(s);
     var h = Math.floor(s / 3600);
-    var hDisplay = h + " Uur"
+    var m = Math.floor(s % 3600 / 60);
+    var hDisplay = h + " Uur, " + m + " min"
     return hDisplay;
 }

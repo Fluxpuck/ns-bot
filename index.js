@@ -20,10 +20,28 @@ setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 28000);
 
+
+// => restAPI
+
+// importing the dependencies
+const cors = require('cors');
+const helmet = require('helmet');
+
+// adding Helmet to enhance your API's security
+app.use(helmet());
+// enabling CORS for all requests
+app.use(cors());
+
+var routes = require("./routes.js")(app);
+
+// starting the server
+// app.listen(3000, () => {
+//     console.log('listening on port 3000');
+// });
+
 //command modules || command handler
 client.commands = new Discord.Collection();
 
-console.log("-----")
 
 fs.readdir("./_commands/", (err, files) => {
 
@@ -51,7 +69,7 @@ client.on("ready", async () => {
     console.log("-----")
 
     //connection message    
-    console.log(client.user.tag + " connected succesfully to:")
+    console.log(client.user.tag + " connected succesfully to " + client.guilds.size + " servers.")
 
     //connected servers + channels
     client.guilds.forEach((guild) => {
@@ -62,6 +80,8 @@ client.on("ready", async () => {
         //     console.log(` -- ${channel.name} (${channel.type}) - ${channel.id}`)
         // })
     })
+  
+    console.log("-----")
 
     //bot activity
     client.user.setActivity('with Trains || !help', { type: 'PLAYING' })
@@ -101,6 +121,12 @@ client.on("message", async message => {
         if (message.channel.id != defaultchannel) return
     } else { }
 
+    //prefix command
+    if (message.content.startsWith("!myserverprefix")) {
+        let commandfile = client.commands.get("prefix");
+        if (commandfile) commandfile.run(client, message);
+    }
+  
     //command processor
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0]
