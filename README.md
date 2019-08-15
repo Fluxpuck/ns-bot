@@ -12,7 +12,7 @@ Huidige features:
 - `Geplande werkzaamheden ophalen in bericht met pagina's`
 
 Setup features:
-- `Tag Sero to get current server prefix`
+- `Tag Sero om server prefix op te halen`
 - `Uitgebreide help-commando`
 - `Prefix en defaultchannel setup`
 - `Prefix in help-commando veranderd mee met gekozen prefix voor de server`
