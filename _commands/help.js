@@ -6,7 +6,7 @@ const client = new Discord.Client({ disableEveryone: true })
 
 module.exports.run = async (client, message, args) => {
   
-    //default prefix
+     //default prefix
     let defaultprefix = botconfig.prefix
     let prefixes = JSON.parse(fs.readFileSync("./_server/prefixes.json", "utf8"))
     if (!prefixes[message.guild.id]) {

@@ -28,8 +28,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 
 // adding Helmet to enhance your API's security
-app.use(helmet());
 // enabling CORS for all requests
+app.use(helmet());
 app.use(cors());
 
 var routes = require("./routes.js")(app);
@@ -73,7 +73,7 @@ client.on("ready", async () => {
 
     //connected servers + channels
     client.guilds.forEach((guild) => {
-        console.log("server: " + guild.name)
+        console.log("server: [" + guild.id + "] " + guild.name)
 
         //connected channels
         // guild.channels.forEach((channel) => {
@@ -121,9 +121,9 @@ client.on("message", async message => {
         if (message.channel.id != defaultchannel) return
     } else { }
 
-    //prefix command
-    if (message.content.startsWith("!myserverprefix")) {
-        let commandfile = client.commands.get("prefix");
+    //prefix command_v2
+    if (message.isMentioned(client.user) && message.content == client.user) {
+        let commandfile = client.commands.get("prefix_0");
         if (commandfile) commandfile.run(client, message);
     }
   

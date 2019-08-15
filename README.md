@@ -1,4 +1,4 @@
-Sero v2.4.1
+Sero v2.5.2
 =========================
 
 **Sero** is een Nederlandse Spoorwegen discord bot.
@@ -12,19 +12,21 @@ Huidige features:
 - `Geplande werkzaamheden ophalen in bericht met pagina's`
 
 Setup features:
+- `Tag Sero to get current server prefix`
 - `Uitgebreide help-commando`
+- `Prefix en defaultchannel setup`
 - `Prefix in help-commando veranderd mee met gekozen prefix voor de server`
-- `Kies een enkel tekst kanaal waar alle berichten van de bot naar verzonden worden`
 
 In ontwikkeling:
+- `Web dashboard voor het instellen van de bot`
 - `Geautomatiseerd bericht bij storing(en), en/of wijzigingen aan storing(en)`
 - `Indien storing in de !plan(ner) geen reis weergeven maar storing`
 
-Voor meer informatie check `!help`
+Standaard prefix is `!`. Voor meer informatie check `!help`
 
-Voor vragen en bug-reports stuur een discord privé bericht naar Fluxpuck#9999
+Voor vragen, bug-reports en updates join de [Sero Support](https://discord.gg/WcwNtAA) discord server!
 
-Voeg de NS bot toe aan je discord server! [Link](https://discordapp.com/api/oauth2/authorize?client_id=553561246339956766&permissions=0&scope=bot)
+Voeg [Sero](https://discordapp.com/api/oauth2/authorize?client_id=553561246339956766&permissions=0&scope=bot) toe aan jouw discord server!
 
 Made with <3 by [Fluxpuck](https://twitter.com/fluxpuck)
 -------------------

@@ -7,11 +7,11 @@ var path = require('path');
 
 var routes = function (app) {
   
-      // create a write stream (in append mode)
+    // create a write stream (in append mode)
     var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
 
     // adding morgan to log HTTP requests
-    app.use(morgan('combined'))
+    app.use(morgan(botconfig.morgan))
 
     // JSON parser
     app.use(express.json());
@@ -107,7 +107,6 @@ var routes = function (app) {
     // curl -G https://ns-bot-v2.glitch.me/ns-bot/defaultchannel -H "x-key: jtpgW5KG72rqQx2N"
     // curl -d "{"server":"565104867002155008","prefixes":">"}" -H "Content-Type: application/json" -X POST https://ns-bot-v2.glitch.me/ns-bot/prefix -H "x-key: jtpgW5KG72rqQx2N"
     // curl -d '{"server":"565104867002155008","defaultchannel":"580000255173722112"}' -H "Content-Type: application/json" -X POST https://ns-bot-v2.glitch.me/ns-bot/defaultchannel -H "x-key: jtpgW5KG72rqQx2N"
-
 
 };
 

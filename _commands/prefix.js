@@ -6,10 +6,6 @@ const client = new Discord.Client({ disableEveryone: true })
 
 module.exports.run = async (client, message, args) => {
   
-    //only allow admins & bot-owner to setup bot
-    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You've no access to this command.")
-    else if (!message.author.id == process.env.FLUXID) return console.log("NO ACCESS)")
-
     let defaultprefix = botconfig.prefix
 
     var options = {
@@ -31,13 +27,17 @@ module.exports.run = async (client, message, args) => {
             };
         }
         let prefix = prefixes[message.guild.id].prefixes
+        
+        var time = new Date().getTime();
+        var date = new Date(time);
 
-        message.channel.send("Servers Prefix is " + prefix)
+        console.log("[" + message.guild.id + "] " + message.guild.name + " fetched prefix at " + date)
+        message.channel.send("**Hello!** My current prefix is `" + prefix + "`")
 
     });
 
 }
 
 module.exports.help = {
-    name: "prefix"
+    name: "prefix_0"
 }
