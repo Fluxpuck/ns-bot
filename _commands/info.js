@@ -5,8 +5,9 @@ const Discord = require("discord.js")
 const client = new Discord.Client({ disableEveryone: true })
 
 module.exports.run = async (client, message, args) => {
+  
 
-    //info variables
+    // info variables
     let guildcount = client.guilds.size
     let versioncontrol = botconfig.version
 
@@ -22,40 +23,8 @@ module.exports.run = async (client, message, args) => {
         .setThumbnail(defaultconfig.embed_avatar)
         .setTimestamp()
         .setFooter(client.user.username, defaultconfig.embed_emblem)
-
-    var options = {
-        method: 'POST',
-        url: 'https://api.uptimerobot.com/v2/getMonitors',
-        headers:
-        {
-            'cache-control': 'no-cache',
-            'content-type': 'application/x-www-form-urlencoded'
-        },
-        form: { api_key: process.env.UPTIMEROBOTKEY, format: 'json', logs: '1' }
-    };
-
-    request(options, function (error, response, body) {
-        if (error) throw new Error(error);
-
-        let uptimeJSON = JSON.parse(body)
-
-        let monitors = uptimeJSON.monitors
-        for (i in monitors) {
-            let monitor = monitors[i]
-            let name = monitor.friendly_name
-
-            if (name === process.env.BOTNAME) {
-                let duration = monitor.logs[0].duration
-                let uptime = secondsConverter(duration)
-
-                info_embed.addField("Totale Uptime", uptime, true)
-
-                message.channel.send(info_embed)
-
-            }
-        }
-
-    });
+    
+    message.channel.send(info_embed)
 
 }
 
@@ -89,13 +58,4 @@ function date(date) {
     var monthIndex = date.getMonth();
     var year = date.getFullYear();
     return day + ' ' + monthNames[monthIndex] + ' ' + year;
-}
-
-//convert seconds to hours + mins
-function secondsConverter(s) {
-    s = Number(s);
-    var h = Math.floor(s / 3600);
-    var m = Math.floor(s % 3600 / 60);
-    var hDisplay = h + " Uur, " + m + " min"
-    return hDisplay;
 }
