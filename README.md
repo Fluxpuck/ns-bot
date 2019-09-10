@@ -1,4 +1,4 @@
-Sero v2.5.3
+Sero v2.7.0
 =========================
 
 **Sero** is een Nederlandse Spoorwegen discord bot.
@@ -10,6 +10,7 @@ Huidige features:
 - `Reisgeschiedenis, 5 laatste geplande reizen`
 - `Snel een reis plannen aan de hand van je reisgeschiedenis`
 - `Geplande werkzaamheden ophalen in bericht met pagina's`
+- `Vertrektijden per station`
 
 Setup/Info features:
 - `Tag Sero om server prefix op te halen`
