@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
     if (!args.length) {
         let help_embed = new Discord.RichEmbed()
             .setTitle("Help!")
-            .setDescription("Haal de werkzaamheden of storingen op of plan een binnenlandse reis! Meer features zijn in ontwikkeling... Gebruik `" + prefix + "help [categorie]` voor meer informatie per catergorie. Standaard prefix voor deze server is `" + prefix + "` \n_______________________________")
+            .setDescription("Haal de werkzaamheden of storingen op of plan een binnenlandse reis! Meer features zijn in ontwikkeling... Gebruik `" + prefix + "help [categorie]` voor meer informatie per catergorie. Standaard prefix voor deze server is `" + prefix + "` \n➖")
             .addField("SETUP", "`" + prefix + "setprefix []` \n`" + prefix + "setchannel []` \n`" + prefix + "removechannel []`", true)
             .addField("INFO", "`" + prefix + "info` \n `" + prefix + "server` \n `" + prefix + "uptime`", true)
             .addField("NS", "`" + prefix + "storing` \n`" + prefix + "werk` \n`" + prefix + "gepland` \n`" + prefix + "plan [station] > [station]` \n`" + prefix + "lijst` \n`" + prefix + "snel [1-5]`", true)
@@ -37,8 +37,8 @@ module.exports.run = async (client, message, args) => {
     } else if (arg == "Setup") {
         let help_embed = new Discord.RichEmbed()
             .setTitle("Setup Commands")
-            .setDescription("_______________________________")
-            .addField("SETUP commands", "`" + prefix + "setprefix []` \n`" + prefix + "setchannel []` \n`" + prefix + "removechannel` \n_______________________________")
+            .setDescription("➖")
+            .addField("SETUP commands", "`" + prefix + "setprefix []` \n`" + prefix + "setchannel []` \n`" + prefix + "removechannel` \n➖")
             .addField("" + prefix + "setprefix []", "Typ `" + prefix + "setprefix` gevolgd door het gewenste prefix ")
             .addField("" + prefix + "setchannel []", "Typ `" + prefix + "setchannel` gevolgd door de naam van het gewenste tekstkanaal")
             .addField("" + prefix + "removechannel", "Typ `" + prefix + "removechannel` om het standaard tekstkanaal te verwijderen. \nPasop! De bot is vervolgens in alle tekstkanalen te gebruiken. ")
@@ -52,8 +52,8 @@ module.exports.run = async (client, message, args) => {
     } else if (arg == "Info") {
         let help_embed = new Discord.RichEmbed()
             .setTitle("Info Commands")
-            .setDescription("_______________________________")
-            .addField("INFO commands", "`" + prefix + "info` \n`" + prefix + "server` \n`" + prefix + "uptime` \n_______________________________")
+            .setDescription("➖")
+            .addField("INFO commands", "`" + prefix + "info` \n`" + prefix + "server` \n`" + prefix + "uptime` \n➖")
             .addField("" + prefix + "info", "Typ `" + prefix + "info` om informatie over de server op te halen")
             .addField("" + prefix + "server", "Typ `" + prefix + "server` om informatie over de bot op te halen")
             .addField("" + prefix + "uptime", "Typ `" + prefix + "uptime` om de totale uptime op te halen")
@@ -67,8 +67,8 @@ module.exports.run = async (client, message, args) => {
     } else if (arg == "Ns") {
         let help_embed = new Discord.RichEmbed()
             .setTitle("NS Commands")
-            .setDescription("_______________________________")
-            .addField("NS commands", "`" + prefix + "storing` \n`" + prefix + "werk` \n `" + prefix + "gepland` \n`" + prefix + "plan [station] > [station]` \n `" + prefix + "lijst` \n_______________________________")
+            .setDescription("➖")
+            .addField("NS commands", "`" + prefix + "storing` \n`" + prefix + "werk` \n `" + prefix + "gepland` \n`" + prefix + "plan [station] > [station]` \n `" + prefix + "lijst` \n➖")
             .addField("" + prefix + "storing", "Typ `" + prefix + "storing` om de actuele situatie op het spoor in Nederland op te halen")
             .addField("" + prefix + "werk", "Typ `" + prefix + "werk` om de actuele werkzaamheden op het spoor in Nederland op te halen")
             .addField("" + prefix + "gepland", "Haal geplande werkzaamheden op door `" + prefix + "gepland` te typen! \nLetop, dit is een bericht met meerdere pagina's")

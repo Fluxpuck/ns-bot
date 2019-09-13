@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
 
         let NS_storing_embed = new Discord.RichEmbed()
             .setTitle("NS Storingen")
-            .setDescription("De actuele situatie op het spoor is als volgt. [NS Storingen](https://www.ns.nl/reisinformatie/actuele-situatie-op-het-spoor) \n_____")
+            .setDescription("De actuele situatie op het spoor is als volgt. [NS Storingen](https://www.ns.nl/reisinformatie/actuele-situatie-op-het-spoor) \n➖")
 
         let payloads = nsjson.payload
         if (typeof payloads !== 'undefined' && payloads.length > 0) {
@@ -40,13 +40,13 @@ module.exports.run = async (client, message, args) => {
                     let alt_vervoer = payload.verstoring.alternatiefVervoer
                     let time = payload.verstoring.meldtijd
 
-                    NS_storing_embed.addField("⚠ Storing traject " + title, oorzaak + " " + alt_vervoer + " " + verwachting + "\n_____")
+                    NS_storing_embed.addField("⚠ Storing traject " + title, oorzaak + " " + alt_vervoer + " " + verwachting + "\n➖")
 
                 } else {
                     let title_2 = payload.melding.titel
                     let beschrijving = payload.melding.beschrijving
 
-                    NS_storing_embed.addField("❗ " + title_2, beschrijving + "\n_____")
+                    NS_storing_embed.addField("❗ " + title_2, beschrijving + "\n➖")
                 }
             }
 

@@ -42,6 +42,7 @@ var routes = require("./routes.js")(app);
 //command modules || command handler
 client.commands = new Discord.Collection();
 
+let DiscordCommandList = []
 
 fs.readdir("./_commands/", (err, files) => {
 
@@ -56,32 +57,45 @@ fs.readdir("./_commands/", (err, files) => {
     console.log(`Commands loading... \n=>`)
     jsfile.forEach((f, i) => {
         let props = require(`./_commands/${f}`);
-        console.log((i + 1) + ` - ${f} loaded!`);
+        DiscordCommandList.push((i + 1) + ` - ${f} loaded!`)
+        // console.log((i + 1) + ` - ${f} loaded!`);
         client.commands.set(props.help.name, props);
     })
   
+    console.log(DiscordCommandList)
     console.log(`=> \n` + jsfile.length + ` commands were loaded correctly!`);
+  
+    // write results
+    let data = JSON.stringify(DiscordCommandList);
+    fs.writeFileSync('./_server/discordcommandlist.json', data);
 
 });
 
 client.on("ready", async () => {
 
     console.log("-----")
+    let DiscordServerList = []
 
     //connection message    
     console.log(client.user.tag + " connected succesfully to " + client.guilds.size + " servers.")
 
     //connected servers + channels
     client.guilds.forEach((guild) => {
-        console.log("server: [" + guild.id + "] " + guild.name)
+      
+        DiscordServerList.push("server: [" + guild.id + "] " + guild.name)
+        // console.log("server: [" + guild.id + "] " + guild.name)
 
         //connected channels
         // guild.channels.forEach((channel) => {
         //     console.log(` -- ${channel.name} (${channel.type}) - ${channel.id}`)
         // })
     })
-  
+    // console.log(DiscordServerList)
     console.log("-----")
+  
+    // write results
+    let data = JSON.stringify(DiscordServerList);
+    fs.writeFileSync('./_server/discordserverlist.json', data);
 
     //bot activity
     client.user.setActivity('with Trains || !help', { type: 'PLAYING' })

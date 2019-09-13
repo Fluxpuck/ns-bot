@@ -1,4 +1,4 @@
-Sero v2.7.0
+Sero v2.8.0
 =========================
 
 **Sero** is een Nederlandse Spoorwegen discord bot.
@@ -22,7 +22,6 @@ Setup/Info features:
 In ontwikkeling:
 - `Web dashboard voor het instellen van de bot`
 - `Geautomatiseerd bericht bij storing(en), en/of wijzigingen aan storing(en)`
-- `Indien storing in de !plan(ner) geen reis weergeven maar storing`
 
 Standaard prefix is `!`. Voor meer informatie check `!help`
 

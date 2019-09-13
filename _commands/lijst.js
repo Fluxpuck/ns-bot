@@ -20,7 +20,7 @@ module.exports.run = async (client, message, args) => {
 
         var NS_history_embed = new Discord.RichEmbed()
             .setTitle("Geschiedenis van " + message.member.user.tag)
-            .setDescription("Hier volgen jouw 5 laatste reisplanningen: \n___")
+            .setDescription("Hier volgen jouw 5 laatste reisplanningen: \n➖")
 
         conn.query("SELECT * FROM train_history WHERE user = " + message.author.id + " ORDER BY id DESC", function (err, result, fields) {
             if (err) throw err;

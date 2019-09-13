@@ -35,7 +35,7 @@ module.exports.run = async (client, message, args) => {
                         let gevolg = payload.verstoring.gevolg
                         let periode = payload.verstoring.periode
 
-                        tempArray.push("👷 Werkzaamheden traject " + title + ":\n" + gevolg + " Werkzaamheden " + periode + "\n–")
+                        tempArray.push("👷 Werkzaamheden traject " + title + ":\n" + gevolg + " Werkzaamheden " + periode + "\n➖")
                     }
                 }
 

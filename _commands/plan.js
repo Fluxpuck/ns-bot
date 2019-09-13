@@ -141,48 +141,69 @@ module.exports.run = async (client, message, args) => {
             if (nstjson.message) {
                 let badtrip = nstjson.errors[0].message
 
-                NS_trip_embed.addField("⚠ Melding", badtrip + "\n of het is verkeerd geschreven.")
+                NS_trip_embed.addField("⚠ Melding", badtrip + "\nof het is verkeerd geschreven.")
 
                 NS_trip_embed.setTimestamp()
                 NS_trip_embed.setColor(defaultconfig.embed_color);
                 NS_trip_embed.setFooter(client.user.username, client.user.avatarURL);
 
             } else {
-
-                NS_trip_embed.setDescription(stationFrom + " - " + stationTo + " om " + time(t) + " \nLink naar je geplande reis: [NS Reisplanner](" + tripLink + ")")
-                NS_trip_embed.addBlankField(true);
+                NS_trip_embed.setDescription(stationFrom + " - " + stationTo + " om " + time(t) + " \nLink naar je geplande reis: [NS Reisplanner](" + tripLink + ") \n➖")
+                // NS_trip_embed.addBlankField(true);
 
                 let trips = nstjson.trips
                 for (i in trips) {
                     let trip = trips[i]
 
+
                     if (!trip) {
-                        NS_trip_embed.addField("Melding", "Er zijn momenteel geen treinreizen in de planner")
+                        NS_trip_embed.addField("Melding", "Er zijn momenteel geen treinreizen in de planner.")
                     } else {
+
+                        //define trip length and count transfers    
                         let duration = trip.plannedDurationInMinutes
                         let transfers = trip.transfers
+                        // => trip header with duration and transfers
+                        NS_trip_embed.addField(stationFrom + " - " + stationTo, "🕙  " + duration + " minuten - 🚶 " + transfers + " x overstappen" + "")
 
-                        NS_trip_embed.addField(stationFrom + " - " + stationTo, "🕙  " + duration + " minuten - 🚶 " + transfers + " x overstappen" + "\n _______________________________")
+                        if (trip.status === "CANCELLED") {
+                            try {
+                                let cancelledMessage = trip.legs[0].messages[0].text
+                                NS_trip_embed.addField("🔴 Let op! Deze reis is niet mogelijk", cancelledMessage + ".")
+                            } catch (err) {
+                                console.log("trip cancel error: " + err)
+                            }
+                        } else {
 
-                        let legs = trip.legs
-                        for (i in legs) {
-                            let leg = legs[i]
+                            //check if there is any disruption on the trip and fetch message
+                            let disruptionledMessage
+                            if (trip.status === "DISRUPTION") {
+                                disruptionledMessage = trip.legs[0].messages[0].text
+                                NS_trip_embed.addField("🔸 Let op! Er is een verstoring op deze route", disruptionledMessage + ".")
+                            }
 
-                            let departTime = leg.origin.plannedDateTime
-                            let d = new Date(departTime)
-                            let dTime = time(d)
-                            let departStation = leg.origin.name
-                            let departTrack = leg.origin.plannedTrack
-                            let arriveTime = leg.destination.plannedDateTime
-                            let a = new Date(arriveTime)
-                            let aTime = time(a)
-                            let arriveStation = leg.destination.name
-                            let arriveTrack = leg.destination.plannedTrack
-                            let traintype = leg.name
-                            let trainDirection = leg.direction
+                            let legs = trip.legs
+                            for (i in legs) {
+                                let leg = legs[i]
 
+                                //define all variables
+                                let departTime = leg.origin.plannedDateTime
+                                let d = new Date(departTime)
+                                let dTime = time(d)
+                                let departStation = leg.origin.name
+                                let departTrack = leg.origin.plannedTrack
+                                let arriveTime = leg.destination.plannedDateTime
+                                let a = new Date(arriveTime)
+                                let aTime = time(a)
+                                let arriveStation = leg.destination.name
+                                let arriveTrack = leg.destination.plannedTrack
+                                let traintype = leg.name
+                                let trainDirection = leg.direction
 
-                            NS_trip_embed.addField("Vertrek " + dTime + " - " + departStation + " spoor " + departTrack, traintype + " richting " + trainDirection + " \n | \n" + "Aankomst " + aTime + " - " + arriveStation + " spoor " + arriveTrack)
+                                NS_trip_embed.addField("> Vertrek " + dTime + " - " + departStation + " spoor " + departTrack, traintype + " richting " + trainDirection + " \n | \n" + "Aankomst " + aTime + " - " + arriveStation + " spoor " + arriveTrack)
+
+                            }
+
                         }
                         NS_trip_embed.addBlankField(true)
                     }
@@ -190,7 +211,7 @@ module.exports.run = async (client, message, args) => {
                     NS_trip_embed.setTimestamp()
                     NS_trip_embed.setThumbnail(defaultconfig.embed_avatar)
                     NS_trip_embed.setColor(defaultconfig.embed_color);
-                    NS_trip_embed.setFooter(client.user.username, client.user.avatarURL);
+                    NS_trip_embed.setFooter(client.user.username, defaultconfig.embed_emblem);
 
                 }
 

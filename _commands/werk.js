@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
 
         let NS_werk_embed = new Discord.RichEmbed()
             .setTitle("NS Werkzaamheden")
-            .setDescription("De actuele werkzaamheden zijn als volgt. [NS Werkzaamheden](https://www.ns.nl/reisinformatie/werk-aan-het-spoor) \n_____")
+            .setDescription("De actuele werkzaamheden zijn als volgt. [NS Werkzaamheden](https://www.ns.nl/reisinformatie/werk-aan-het-spoor) \n➖")
 
         let payloads = nsjson.payload
         if (typeof payloads !== 'undefined' && payloads.length > 0) {
@@ -38,13 +38,13 @@ module.exports.run = async (client, message, args) => {
                     let gevolg = payload.verstoring.gevolg
                     let periode = payload.verstoring.periode
 
-                    NS_werk_embed.addField("👷 Werkzaamheden traject " + title, gevolg + " " + "Werkzaamheden " + periode + "\n_____")
+                    NS_werk_embed.addField("👷 Werkzaamheden traject " + title, gevolg + " " + "Werkzaamheden " + periode + "\n➖")
 
                 } else {
                     let title_2 = payload.melding.titel
                     let beschrijving = payload.melding.beschrijving
 
-                    NS_werk_embed.addField("❗ " + title_2, beschrijving + "\n_____")
+                    NS_werk_embed.addField("❗ " + title_2, beschrijving + "\n➖")
                 }
             }
 
