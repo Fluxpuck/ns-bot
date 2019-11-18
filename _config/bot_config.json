@@ -1,5 +1,5 @@
 {
-    "version": "3.0.0",
+    "version": "3.0.1",
     "default_prefix": "ns/",
     "fluxID": "270640827787771943",
     "morgan": "[:date[web]] ':method :url' HTTP/:http-version statuscode: :status, responsetime: :response-time[digits]ms ':user-agent'"

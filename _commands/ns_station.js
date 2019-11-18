@@ -125,8 +125,14 @@ module.exports.run = async (client, message, args) => {
             //fetch vertrek payload
             let departures = ns_vertrek_json.payload.departures
 
-            //loop through all departures, limited
+            //check and set departure limite
             let departure_limit = 15
+            if (departures.length > 12 && departures.length < 15) { departure_limit = 12 }
+            else if (departures.length > 9 && departures.length < 12) { departure_limit = 9 }
+            else if (departures.length > 6 && departures.length < 9) { departure_limit = 6 }
+            else { departure_limit = departures.length }
+            
+            //loop through all departures, limited
             for (let i = 0; i < departure_limit; i++) {
                 let departure = departures[i]
 
