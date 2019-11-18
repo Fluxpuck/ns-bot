@@ -217,15 +217,6 @@ const routes = function (app) {
         }
     });
 
-    // curl -G https://ns-bot-v2.glitch.me/ns-bot/serverlist -H "x-key: jtpgW5KG72rqQx2N"
-    // curl -G https://ns-bot-v2.glitch.me/ns-bot/commandlist -H "x-key: jtpgW5KG72rqQx2N"
-    // curl -G https://ns-bot-v2.glitch.me/ns-bot/prefix -H "x-key: jtpgW5KG72rqQx2N"
-    // curl -G https://ns-bot-v2.glitch.me/ns-bot/defaultchannel -H "x-key: jtpgW5KG72rqQx2N"
-
-    // curl -X POST -H "Content-Type: application/json" -d "{\"server\": \"565104867002155008\", \"prefix\": \"$\"}" https://ns-bot-v2.glitch.me/ns-bot/prefix -H "x-key: jtpgW5KG72rqQx2N"
-    // curl -X POST -H "Content-Type: application/json" -d "{\"server\": \"565104867002155008\", \"defaultchannel\": \"580000255173722112\"}" https://ns-bot-v2.glitch.me/ns-bot/defaultchannel -H "x-key: jtpgW5KG72rqQx2N"
-
-    //process.env.MY_SECRET
 };
 
 module.exports = routes;
