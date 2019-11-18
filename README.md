@@ -1,4 +1,4 @@
-Sero v2.8.0
+Sero v2.8.0 (deprecated)
 =========================
 
 **Sero** is een Nederlandse Spoorwegen discord bot.
