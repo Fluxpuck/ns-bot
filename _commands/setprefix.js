@@ -1,39 +1,44 @@
-const botconfig = require("../botconfig.json")
-const defaultconfig = require("../_server/default-config.json")
-const Discord = require("discord.js")
+//construct requirements
+const botconfig = require("../_config/bot_config.json")
+const embed = require("../_config/embed.json")
+const functions = require('../_config/functions');
+const Discord = require("discord.js");
 const fs = require('fs');
+
+//client requirements
 const client = new Discord.Client({ disableEveryone: true })
 
 module.exports.run = async (client, message, args) => {
-  
-    //only allow admins & bot-owner to setup bot
-    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You've no access to this command.")
-    if (!message.sender === process.env.FLUXID) return message.channel.send("You have no access to this command.")
 
-    if (!args.length) {
-        message.channel.send("Please enter a prefix")
-    } else {
+    //permission handler
+    if (!message.member.hasPermission("MANAGE_MESSAGES") || !message.author.id === botconfig.fluxID) {
+        return message.channel.send("⛔ You've no access to this command!").then(msg => { msg.delete(4000) })
+    }
 
-        //parse JSON, edit prefixes, write file
+    //check if input is correct
+    if (!args.length) return message.channel.send("❗ `Please enter a prefix`").then(msg => { msg.delete(8000) })
+    if (args.length > 1) return message.channel.send("❗ `Please enter a prefix, without any spaces`").then(msg => { msg.delete(8000) })
+
+    //set custom server prefix
+    else {
+
+        //open server prefix JSON
         let prefixes = JSON.parse(fs.readFileSync("./_server/prefixes.json", "utf8"))
 
+        //set custom server prefix with admin input
         prefixes[message.guild.id] = {
             prefixes: args[0]
         }
 
+        //write custom server prefix to JSON
         fs.writeFile("./_server/prefixes.json", JSON.stringify(prefixes), (err) => {
             if (err) console.log(err)
         })
 
-        let setprefix_embed = new Discord.RichEmbed()
-            .setTitle("Prefix is changed:")
-            .setDescription("Prefix is now set to " + args[0])
-            .setColor(defaultconfig.embed_color)
-            // .setThumbnail(defaultconfig.embed_avatar)
-            .setTimestamp()
-            .setFooter(client.user.username, defaultconfig.embed_emblem)
-
-        message.channel.send(setprefix_embed)
+        //fetch user's message and delete
+        // let lastmsg = message.channel.lastMessageID
+        // message.channel.fetchMessage(lastmsg).then(msg => msg.delete(9000));
+        return message.channel.send(">>> Sero's prefix is now set to: `" + args[0] + "`")
 
     }
 
@@ -41,4 +46,4 @@ module.exports.run = async (client, message, args) => {
 
 module.exports.help = {
     name: "setprefix"
-}            
+}

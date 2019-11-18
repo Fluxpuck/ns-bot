@@ -1,0 +1,3789 @@
+{
+  "trips": [
+    {
+      "uid": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T08:51:00+01:00|plannedArrivalTime=2019-11-18T09:40:00+01:00|yearCard=false|excludeHighSpeedTrains=false|path=TRAIN_ns_SPR_5230,8400597,TRAIN_ns_IC_3627",
+      "plannedDurationInMinutes": 49,
+      "transfers": 1,
+      "status": "NORMAL",
+      "legs": [
+        {
+          "idx": "0",
+          "name": "SPR 5230",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Tilburg Universiteit",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|3582|0|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T08:51:00+0100",
+            "plannedTrack": "4",
+            "checkinStatus": "CHECKIN",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Station is Accessible",
+                "key": "SH",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "ehv",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Eindhoven",
+            "lng": 5.479977,
+            "lat": 51.442362,
+            "countryCode": "NL",
+            "uicCode": "8400206",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:22:00+0100",
+            "plannedTrack": "2",
+            "exitSide": "RIGHT",
+            "checkinStatus": "NOTHING",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "tb",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Tilburg",
+            "lng": 5.08393,
+            "lat": 51.560382,
+            "countryCode": "NL",
+            "uicCode": "8400597",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "5230",
+            "categoryCode": "SPR",
+            "shortCategoryName": "SPR",
+            "longCategoryName": "Sprinter",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Sprinter"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 4,
+              "routeIdxTo": 4,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 9,
+              "routeIdxTo": 9,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+ebfr, source AGO Manually, Entry in train for Wheelchairs",
+              "key": "EW",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 4,
+              "routeIdxTo": 4,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+ebfr, source AGO Manually, Entry in train for Wheelchairs",
+              "key": "EW",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 9,
+              "routeIdxTo": 9,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 4,
+              "plannedDepartureDateTime": "2019-11-18T08:51:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "4",
+              "plannedArrivalDateTime": "2019-11-18T08:43:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "4",
+              "cancelled": false,
+              "name": "Eindhoven",
+              "lng": 5.479977,
+              "lat": 51.442362,
+              "countryCode": "NL",
+              "uicCode": "8400206"
+            },
+            {
+              "notes": [],
+              "routeIdx": 5,
+              "plannedDepartureDateTime": "2019-11-18T08:54:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "1",
+              "plannedArrivalDateTime": "2019-11-18T08:54:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "1",
+              "cancelled": false,
+              "name": "Eindhoven Strijp-S",
+              "lng": 5.457549,
+              "lat": 51.450282,
+              "countryCode": "NL",
+              "uicCode": "8400196"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 6,
+              "plannedDepartureDateTime": "2019-11-18T09:00:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "1",
+              "plannedArrivalDateTime": "2019-11-18T09:00:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "1",
+              "cancelled": false,
+              "name": "Best",
+              "lng": 5.389222,
+              "lat": 51.509539,
+              "countryCode": "NL",
+              "uicCode": "8400112"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 7,
+              "plannedDepartureDateTime": "2019-11-18T09:09:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "6",
+              "plannedArrivalDateTime": "2019-11-18T09:07:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "6",
+              "cancelled": false,
+              "name": "Boxtel",
+              "lng": 5.319097,
+              "lat": 51.58485,
+              "countryCode": "NL",
+              "uicCode": "8400129"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 8,
+              "plannedDepartureDateTime": "2019-11-18T09:15:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "2",
+              "plannedArrivalDateTime": "2019-11-18T09:15:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "2",
+              "cancelled": false,
+              "name": "Oisterwijk",
+              "lng": 5.193581,
+              "lat": 51.58201,
+              "countryCode": "NL",
+              "uicCode": "8400482"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 9,
+              "plannedDepartureDateTime": "2019-11-18T09:23:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "2",
+              "plannedArrivalDateTime": "2019-11-18T09:22:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "2",
+              "cancelled": false,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            }
+          ],
+          "steps": [],
+          "crowdForecast": "MEDIUM",
+          "punctuality": 100,
+          "crossPlatformTransfer": true,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=5230&datetime=2019-11-18T08:51:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        },
+        {
+          "idx": "2",
+          "name": "IC 3627 ",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Roosendaal",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|450433|0|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:28:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T09:29:00+0100",
+            "plannedTrack": "3",
+            "checkinStatus": "NOTHING",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "tb",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Tilburg",
+            "lng": 5.08393,
+            "lat": 51.560382,
+            "countryCode": "NL",
+            "uicCode": "8400597",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:40:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T09:41:00+0100",
+            "plannedTrack": "8",
+            "exitSide": "LEFT",
+            "checkinStatus": "CHECKOUT",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "bd",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Breda",
+            "lng": 4.78005,
+            "lat": 51.595071,
+            "countryCode": "NL",
+            "uicCode": "8400131",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "3627",
+            "categoryCode": "IC",
+            "shortCategoryName": "IC",
+            "longCategoryName": "Intercity",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Intercity"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 25,
+              "routeIdxTo": 25,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 29,
+              "routeIdxTo": 29,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 25,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:28:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T09:29:00+0100",
+              "plannedDepartureTrack": "3",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:27:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "3",
+              "departureDelayInSeconds": 60,
+              "cancelled": false,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Universiteit",
+              "lng": 5.05111122131348,
+              "lat": 51.564998626709,
+              "countryCode": "NL",
+              "uicCode": "8400594"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Reeshof",
+              "lng": 4.99444437026978,
+              "lat": 51.5736122131348,
+              "countryCode": "NL",
+              "uicCode": "8400598"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Gilze-Rijen",
+              "lng": 4.92611122131348,
+              "lat": 51.583610534668,
+              "countryCode": "NL",
+              "uicCode": "8400251"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 29,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:45:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "8",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:40:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T09:41:00+0100",
+              "plannedArrivalTrack": "8",
+              "arrivalDelayInSeconds": 60,
+              "cancelled": false,
+              "name": "Breda",
+              "lng": 4.78005,
+              "lat": 51.595071,
+              "countryCode": "NL",
+              "uicCode": "8400131"
+            }
+          ],
+          "steps": [],
+          "punctuality": 100,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=3627&datetime=2019-11-18T09:28:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        }
+      ],
+      "overviewPolyLine": [],
+      "checksum": "bb21522d_2",
+      "crowdForecast": "MEDIUM",
+      "punctuality": 100,
+      "ctxRecon": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T08:51:00+01:00|plannedArrivalTime=2019-11-18T09:40:00+01:00|yearCard=false|excludeHighSpeedTrains=false",
+      "actualDurationInMinutes": 50,
+      "idx": 0,
+      "optimal": true,
+      "fares": [
+        {
+          "priceInCents": 2280,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 684,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 345312,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 3010,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 48500,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 582060,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1824,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 28800,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1129,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 3762,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1140,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 35900,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1505,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 1368,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 2258,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 912,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 60700,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1881,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        }
+      ],
+      "productFare": {
+        "priceInCents": 1140,
+        "product": "OVCHIPKAART_ENKELE_REIS",
+        "travelClass": "SECOND_CLASS",
+        "priceInCentsExcludingSupplement": 1140,
+        "discountType": "NO_DISCOUNT"
+      },
+      "fareOptions": {
+        "isInternationalBookable": false,
+        "isInternational": false,
+        "isEticketBuyable": true,
+        "isPossibleWithOvChipkaart": true
+      },
+      "type": "NS",
+      "shareUrl": {
+        "uri": "https://www.ns.nl/rpx?ctx=arnu%7CfromStation%3D8400206%7CtoStation%3D8400131%7CplannedFromTime%3D2019-11-18T08%3A51%3A00%2B01%3A00%7CplannedArrivalTime%3D2019-11-18T09%3A40%3A00%2B01%3A00%7CyearCard%3Dfalse%7CexcludeHighSpeedTrains%3Dfalse"
+      },
+      "realtime": true,
+      "routeId": "KVI="
+    },
+    {
+      "uid": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:07:00+01:00|plannedArrivalTime=2019-11-18T10:07:00+01:00|yearCard=false|excludeHighSpeedTrains=false|path=TRAIN_ns_IC_828,8400319,TRAIN_ns_SPR_6629",
+      "plannedDurationInMinutes": 60,
+      "transfers": 1,
+      "status": "NORMAL",
+      "legs": [
+        {
+          "idx": "0",
+          "name": "IC 828  ",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Alkmaar",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|454092|0|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:07:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T09:07:00+0100",
+            "plannedTrack": "5",
+            "checkinStatus": "CHECKIN",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Station is Accessible",
+                "key": "SH",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "ehv",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Eindhoven",
+            "lng": 5.479977,
+            "lat": 51.442362,
+            "countryCode": "NL",
+            "uicCode": "8400206",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:25:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T09:25:00+0100",
+            "plannedTrack": "3a",
+            "exitSide": "LEFT",
+            "checkinStatus": "NOTHING",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "ht",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Hertogenbosch ('s)",
+            "lng": 5.29479,
+            "lat": 51.690536,
+            "countryCode": "NL",
+            "uicCode": "8400319",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "828",
+            "categoryCode": "IC",
+            "shortCategoryName": "IC",
+            "longCategoryName": "Intercity",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Intercity"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 12,
+              "routeIdxTo": 12,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 17,
+              "routeIdxTo": 17,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 12,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:07:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T09:07:00+0100",
+              "plannedDepartureTrack": "5",
+              "plannedArrivalDateTime": "2019-11-18T09:02:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "5",
+              "cancelled": false,
+              "name": "Eindhoven",
+              "lng": 5.479977,
+              "lat": 51.442362,
+              "countryCode": "NL",
+              "uicCode": "8400206"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Eindhoven Strijp-S",
+              "lng": 5.45583343505859,
+              "lat": 51.4511108398438,
+              "countryCode": "NL",
+              "uicCode": "8400196"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Best",
+              "lng": 5.38916683197022,
+              "lat": 51.5099983215332,
+              "countryCode": "NL",
+              "uicCode": "8400112"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Boxtel",
+              "lng": 5.31912,
+              "lat": 51.58433,
+              "countryCode": "NL",
+              "uicCode": "8400129"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Vught",
+              "lng": 5.29194450378418,
+              "lat": 51.6555557250977,
+              "countryCode": "NL",
+              "uicCode": "8400667"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 17,
+              "plannedDepartureDateTime": "2019-11-18T09:28:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "3a",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:25:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T09:25:00+0100",
+              "plannedArrivalTrack": "3a",
+              "cancelled": false,
+              "name": "Hertogenbosch ('s)",
+              "lng": 5.29479,
+              "lat": 51.690536,
+              "countryCode": "NL",
+              "uicCode": "8400319"
+            }
+          ],
+          "steps": [],
+          "crowdForecast": "LOW",
+          "punctuality": 100,
+          "crossPlatformTransfer": false,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=828&datetime=2019-11-18T09:07:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        },
+        {
+          "idx": "2",
+          "name": "SPR 6629",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Dordrecht",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|3646|0|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:33:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T09:35:00+0100",
+            "plannedTrack": "7",
+            "checkinStatus": "NOTHING",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "ht",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Hertogenbosch ('s)",
+            "lng": 5.29479,
+            "lat": 51.690536,
+            "countryCode": "NL",
+            "uicCode": "8400319",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T10:07:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T10:07:00+0100",
+            "plannedTrack": "7",
+            "exitSide": "RIGHT",
+            "checkinStatus": "CHECKOUT",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "bd",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Breda",
+            "lng": 4.78005,
+            "lat": 51.595071,
+            "countryCode": "NL",
+            "uicCode": "8400131",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "6629",
+            "categoryCode": "SPR",
+            "shortCategoryName": "SPR",
+            "longCategoryName": "Sprinter",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Sprinter"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 13,
+              "routeIdxTo": 13,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 18,
+              "routeIdxTo": 18,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+ebfr, source AGO Manually, Entry in train for Wheelchairs",
+              "key": "EW",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 13,
+              "routeIdxTo": 13,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+ebfr, source AGO Manually, Entry in train for Wheelchairs",
+              "key": "EW",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 18,
+              "routeIdxTo": 18,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 13,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:33:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T09:35:00+0100",
+              "plannedDepartureTrack": "7",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:30:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "7",
+              "departureDelayInSeconds": 120,
+              "cancelled": false,
+              "name": "Hertogenbosch ('s)",
+              "lng": 5.29479,
+              "lat": 51.690536,
+              "countryCode": "NL",
+              "uicCode": "8400319"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 14,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:49:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T09:50:00+0100",
+              "plannedDepartureTrack": "3",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:48:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T09:49:00+0100",
+              "plannedArrivalTrack": "3",
+              "departureDelayInSeconds": 60,
+              "arrivalDelayInSeconds": 60,
+              "cancelled": false,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 15,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:52:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T09:53:00+0100",
+              "plannedDepartureTrack": "1",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:52:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T09:53:00+0100",
+              "plannedArrivalTrack": "1",
+              "departureDelayInSeconds": 60,
+              "arrivalDelayInSeconds": 60,
+              "cancelled": false,
+              "name": "Tilburg Universiteit",
+              "lng": 5.04943,
+              "lat": 51.565146,
+              "countryCode": "NL",
+              "uicCode": "8400594"
+            },
+            {
+              "notes": [],
+              "routeIdx": 16,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:56:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T09:57:00+0100",
+              "plannedDepartureTrack": "1",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:56:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T09:57:00+0100",
+              "plannedArrivalTrack": "1",
+              "departureDelayInSeconds": 60,
+              "arrivalDelayInSeconds": 60,
+              "cancelled": false,
+              "name": "Tilburg Reeshof",
+              "lng": 4.993112,
+              "lat": 51.573865,
+              "countryCode": "NL",
+              "uicCode": "8400598"
+            },
+            {
+              "notes": [],
+              "routeIdx": 17,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T10:00:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T10:00:00+0100",
+              "plannedDepartureTrack": "3",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T10:00:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T10:00:00+0100",
+              "plannedArrivalTrack": "3",
+              "cancelled": false,
+              "name": "Gilze-Rijen",
+              "lng": 4.924632,
+              "lat": 51.584041,
+              "countryCode": "NL",
+              "uicCode": "8400251"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 18,
+              "plannedDepartureDateTime": "2019-11-18T10:09:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "7",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T10:07:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T10:07:00+0100",
+              "plannedArrivalTrack": "7",
+              "cancelled": false,
+              "name": "Breda",
+              "lng": 4.78005,
+              "lat": 51.595071,
+              "countryCode": "NL",
+              "uicCode": "8400131"
+            }
+          ],
+          "steps": [],
+          "punctuality": 100,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=6629&datetime=2019-11-18T09:33:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        }
+      ],
+      "overviewPolyLine": [],
+      "checksum": "405b2c57_2",
+      "crowdForecast": "LOW",
+      "punctuality": 100,
+      "ctxRecon": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:07:00+01:00|plannedArrivalTime=2019-11-18T10:07:00+01:00|yearCard=false|excludeHighSpeedTrains=false",
+      "actualDurationInMinutes": 60,
+      "idx": 1,
+      "optimal": false,
+      "fares": [
+        {
+          "priceInCents": 2280,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 684,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 345312,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 3010,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 48500,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 582060,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1824,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 28800,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1129,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 3762,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1140,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 35900,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1505,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 1368,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 2258,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 912,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 60700,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1881,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        }
+      ],
+      "productFare": {
+        "priceInCents": 1140,
+        "product": "OVCHIPKAART_ENKELE_REIS",
+        "travelClass": "SECOND_CLASS",
+        "priceInCentsExcludingSupplement": 1140,
+        "discountType": "NO_DISCOUNT"
+      },
+      "fareOptions": {
+        "isInternationalBookable": false,
+        "isInternational": false,
+        "isEticketBuyable": true,
+        "isPossibleWithOvChipkaart": true
+      },
+      "type": "NS",
+      "shareUrl": {
+        "uri": "https://www.ns.nl/rpx?ctx=arnu%7CfromStation%3D8400206%7CtoStation%3D8400131%7CplannedFromTime%3D2019-11-18T09%3A07%3A00%2B01%3A00%7CplannedArrivalTime%3D2019-11-18T10%3A07%3A00%2B01%3A00%7CyearCard%3Dfalse%7CexcludeHighSpeedTrains%3Dfalse"
+      },
+      "realtime": true,
+      "routeId": "KVI="
+    },
+    {
+      "uid": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:14:00+01:00|plannedArrivalTime=2019-11-18T09:52:00+01:00|yearCard=false|excludeHighSpeedTrains=false|path=TRAIN_ns_IC_1128",
+      "plannedDurationInMinutes": 38,
+      "transfers": 0,
+      "status": "CANCELLED",
+      "legs": [
+        {
+          "idx": "0",
+          "name": "IC 1128 ",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Den Haag Centraal",
+          "cancelled": true,
+          "changePossible": false,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|43|1|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:14:00+0100",
+            "checkinStatus": "CHECKIN",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Station is Accessible",
+                "key": "SH",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "ehv",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Eindhoven",
+            "lng": 5.479977,
+            "lat": 51.442362,
+            "countryCode": "NL",
+            "uicCode": "8400206",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:52:00+0100",
+            "checkinStatus": "CHECKOUT",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "bd",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Breda",
+            "lng": 4.78005,
+            "lat": 51.595071,
+            "countryCode": "NL",
+            "uicCode": "8400131",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "1128",
+            "categoryCode": "IC",
+            "shortCategoryName": "IC",
+            "longCategoryName": "Intercity",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Intercity"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 0,
+              "routeIdxTo": 0,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 9,
+              "routeIdxTo": 9,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 0,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:14:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "cancelled": true,
+              "name": "Eindhoven",
+              "lng": 5.479977,
+              "lat": 51.442362,
+              "countryCode": "NL",
+              "uicCode": "8400206"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Eindhoven Strijp-S",
+              "lng": 5.45583343505859,
+              "lat": 51.4511108398438,
+              "countryCode": "NL",
+              "uicCode": "8400196"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Best",
+              "lng": 5.38916683197022,
+              "lat": 51.5099983215332,
+              "countryCode": "NL",
+              "uicCode": "8400112"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Boxtel",
+              "lng": 5.31912,
+              "lat": 51.58433,
+              "countryCode": "NL",
+              "uicCode": "8400129"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Oisterwijk",
+              "lng": 5.19416666030884,
+              "lat": 51.5822219848633,
+              "countryCode": "NL",
+              "uicCode": "8400482"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 5,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:39:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:36:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "cancelled": true,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Universiteit",
+              "lng": 5.05111122131348,
+              "lat": 51.564998626709,
+              "countryCode": "NL",
+              "uicCode": "8400594"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Reeshof",
+              "lng": 4.99444437026978,
+              "lat": 51.5736122131348,
+              "countryCode": "NL",
+              "uicCode": "8400598"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Gilze-Rijen",
+              "lng": 4.92611122131348,
+              "lat": 51.583610534668,
+              "countryCode": "NL",
+              "uicCode": "8400251"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 9,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:53:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T09:52:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "cancelled": true,
+              "name": "Breda",
+              "lng": 4.78005,
+              "lat": 51.595071,
+              "countryCode": "NL",
+              "uicCode": "8400131"
+            }
+          ],
+          "steps": [],
+          "crowdForecast": "LOW",
+          "punctuality": 91.7,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=1128&datetime=2019-11-18T09:14:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        }
+      ],
+      "overviewPolyLine": [],
+      "checksum": "216a466c_2",
+      "crowdForecast": "LOW",
+      "punctuality": 91.7,
+      "ctxRecon": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:14:00+01:00|plannedArrivalTime=2019-11-18T09:52:00+01:00|yearCard=false|excludeHighSpeedTrains=false",
+      "actualDurationInMinutes": 38,
+      "idx": 2,
+      "optimal": false,
+      "fares": [
+        {
+          "priceInCents": 2280,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 684,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 345312,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 3010,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 48500,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 582060,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1824,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 28800,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1129,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 3762,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1140,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 35900,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1505,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 1368,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 2258,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 912,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 60700,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1881,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        }
+      ],
+      "productFare": {
+        "priceInCents": 1140,
+        "product": "OVCHIPKAART_ENKELE_REIS",
+        "travelClass": "SECOND_CLASS",
+        "priceInCentsExcludingSupplement": 1140,
+        "discountType": "NO_DISCOUNT"
+      },
+      "fareOptions": {
+        "isInternationalBookable": false,
+        "isInternational": false,
+        "isEticketBuyable": true,
+        "isPossibleWithOvChipkaart": true
+      },
+      "type": "NS",
+      "shareUrl": {
+        "uri": "https://www.ns.nl/rpx?ctx=arnu%7CfromStation%3D8400206%7CtoStation%3D8400131%7CplannedFromTime%3D2019-11-18T09%3A14%3A00%2B01%3A00%7CplannedArrivalTime%3D2019-11-18T09%3A52%3A00%2B01%3A00%7CyearCard%3Dfalse%7CexcludeHighSpeedTrains%3Dfalse"
+      },
+      "realtime": true,
+      "routeId": "KVI="
+    },
+    {
+      "uid": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:21:00+01:00|plannedArrivalTime=2019-11-18T10:10:00+01:00|yearCard=false|excludeHighSpeedTrains=false|path=TRAIN_ns_SPR_5232,8400597,TRAIN_ns_IC_3629",
+      "plannedDurationInMinutes": 49,
+      "transfers": 1,
+      "status": "NORMAL",
+      "legs": [
+        {
+          "idx": "0",
+          "name": "SPR 5232",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Tilburg Universiteit",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|452923|0|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:21:00+0100",
+            "plannedTrack": "4",
+            "checkinStatus": "CHECKIN",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Station is Accessible",
+                "key": "SH",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "ehv",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Eindhoven",
+            "lng": 5.479977,
+            "lat": 51.442362,
+            "countryCode": "NL",
+            "uicCode": "8400206",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:52:00+0100",
+            "plannedTrack": "2",
+            "exitSide": "RIGHT",
+            "checkinStatus": "NOTHING",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "tb",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Tilburg",
+            "lng": 5.08393,
+            "lat": 51.560382,
+            "countryCode": "NL",
+            "uicCode": "8400597",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "5232",
+            "categoryCode": "SPR",
+            "shortCategoryName": "SPR",
+            "longCategoryName": "Sprinter",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Sprinter"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 4,
+              "routeIdxTo": 4,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 9,
+              "routeIdxTo": 9,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+ebfr, source AGO Manually, Entry in train for Wheelchairs",
+              "key": "EW",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 4,
+              "routeIdxTo": 4,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+ebfr, source AGO Manually, Entry in train for Wheelchairs",
+              "key": "EW",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 9,
+              "routeIdxTo": 9,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 4,
+              "plannedDepartureDateTime": "2019-11-18T09:21:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "4",
+              "plannedArrivalDateTime": "2019-11-18T09:13:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "4",
+              "cancelled": false,
+              "name": "Eindhoven",
+              "lng": 5.479977,
+              "lat": 51.442362,
+              "countryCode": "NL",
+              "uicCode": "8400206"
+            },
+            {
+              "notes": [],
+              "routeIdx": 5,
+              "plannedDepartureDateTime": "2019-11-18T09:24:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "1",
+              "plannedArrivalDateTime": "2019-11-18T09:24:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "1",
+              "cancelled": false,
+              "name": "Eindhoven Strijp-S",
+              "lng": 5.457549,
+              "lat": 51.450282,
+              "countryCode": "NL",
+              "uicCode": "8400196"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 6,
+              "plannedDepartureDateTime": "2019-11-18T09:30:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "1",
+              "plannedArrivalDateTime": "2019-11-18T09:30:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "1",
+              "cancelled": false,
+              "name": "Best",
+              "lng": 5.389222,
+              "lat": 51.509539,
+              "countryCode": "NL",
+              "uicCode": "8400112"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 7,
+              "plannedDepartureDateTime": "2019-11-18T09:39:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "6",
+              "plannedArrivalDateTime": "2019-11-18T09:37:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "6",
+              "cancelled": false,
+              "name": "Boxtel",
+              "lng": 5.319097,
+              "lat": 51.58485,
+              "countryCode": "NL",
+              "uicCode": "8400129"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 8,
+              "plannedDepartureDateTime": "2019-11-18T09:45:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "2",
+              "plannedArrivalDateTime": "2019-11-18T09:45:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "2",
+              "cancelled": false,
+              "name": "Oisterwijk",
+              "lng": 5.193581,
+              "lat": 51.58201,
+              "countryCode": "NL",
+              "uicCode": "8400482"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 9,
+              "plannedDepartureDateTime": "2019-11-18T09:53:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "2",
+              "plannedArrivalDateTime": "2019-11-18T09:52:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "2",
+              "cancelled": false,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            }
+          ],
+          "steps": [],
+          "crowdForecast": "LOW",
+          "punctuality": 92.3,
+          "crossPlatformTransfer": true,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=5232&datetime=2019-11-18T09:21:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        },
+        {
+          "idx": "2",
+          "name": "IC 3629 ",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Roosendaal",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|450441|0|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:58:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T09:58:00+0100",
+            "plannedTrack": "3",
+            "checkinStatus": "NOTHING",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "tb",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Tilburg",
+            "lng": 5.08393,
+            "lat": 51.560382,
+            "countryCode": "NL",
+            "uicCode": "8400597",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T10:10:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T10:10:00+0100",
+            "plannedTrack": "8",
+            "exitSide": "LEFT",
+            "checkinStatus": "CHECKOUT",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "bd",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Breda",
+            "lng": 4.78005,
+            "lat": 51.595071,
+            "countryCode": "NL",
+            "uicCode": "8400131",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "3629",
+            "categoryCode": "IC",
+            "shortCategoryName": "IC",
+            "longCategoryName": "Intercity",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Intercity"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 25,
+              "routeIdxTo": 25,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 29,
+              "routeIdxTo": 29,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 25,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:58:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T09:58:00+0100",
+              "plannedDepartureTrack": "3",
+              "plannedArrivalDateTime": "2019-11-18T09:57:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "3",
+              "cancelled": false,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Universiteit",
+              "lng": 5.05111122131348,
+              "lat": 51.564998626709,
+              "countryCode": "NL",
+              "uicCode": "8400594"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Reeshof",
+              "lng": 4.99444437026978,
+              "lat": 51.5736122131348,
+              "countryCode": "NL",
+              "uicCode": "8400598"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Gilze-Rijen",
+              "lng": 4.92611122131348,
+              "lat": 51.583610534668,
+              "countryCode": "NL",
+              "uicCode": "8400251"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 29,
+              "plannedDepartureDateTime": "2019-11-18T10:15:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "8",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T10:10:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T10:10:00+0100",
+              "plannedArrivalTrack": "8",
+              "cancelled": false,
+              "name": "Breda",
+              "lng": 4.78005,
+              "lat": 51.595071,
+              "countryCode": "NL",
+              "uicCode": "8400131"
+            }
+          ],
+          "steps": [],
+          "punctuality": 92.3,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=3629&datetime=2019-11-18T09:58:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        }
+      ],
+      "overviewPolyLine": [],
+      "checksum": "0c1282a3_2",
+      "crowdForecast": "LOW",
+      "punctuality": 92.3,
+      "ctxRecon": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:21:00+01:00|plannedArrivalTime=2019-11-18T10:10:00+01:00|yearCard=false|excludeHighSpeedTrains=false",
+      "actualDurationInMinutes": 49,
+      "idx": 3,
+      "optimal": false,
+      "fares": [
+        {
+          "priceInCents": 2280,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 684,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 345312,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 3010,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 48500,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 582060,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1824,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 28800,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1129,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 3762,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1140,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 35900,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1505,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 1368,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 2258,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 912,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 60700,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1881,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        }
+      ],
+      "productFare": {
+        "priceInCents": 1140,
+        "product": "OVCHIPKAART_ENKELE_REIS",
+        "travelClass": "SECOND_CLASS",
+        "priceInCentsExcludingSupplement": 1140,
+        "discountType": "NO_DISCOUNT"
+      },
+      "fareOptions": {
+        "isInternationalBookable": false,
+        "isInternational": false,
+        "isEticketBuyable": true,
+        "isPossibleWithOvChipkaart": true
+      },
+      "type": "NS",
+      "shareUrl": {
+        "uri": "https://www.ns.nl/rpx?ctx=arnu%7CfromStation%3D8400206%7CtoStation%3D8400131%7CplannedFromTime%3D2019-11-18T09%3A21%3A00%2B01%3A00%7CplannedArrivalTime%3D2019-11-18T10%3A10%3A00%2B01%3A00%7CyearCard%3Dfalse%7CexcludeHighSpeedTrains%3Dfalse"
+      },
+      "realtime": true,
+      "routeId": "KVI="
+    },
+    {
+      "uid": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:44:00+01:00|plannedArrivalTime=2019-11-18T10:21:00+01:00|yearCard=false|excludeHighSpeedTrains=false|path=TRAIN_ns_IC_1130",
+      "plannedDurationInMinutes": 37,
+      "transfers": 0,
+      "status": "NORMAL",
+      "legs": [
+        {
+          "idx": "0",
+          "name": "IC 1130 ",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Den Haag Centraal",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|54|0|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:44:00+0100",
+            "plannedTrack": "5",
+            "checkinStatus": "CHECKIN",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Station is Accessible",
+                "key": "SH",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "ehv",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Eindhoven",
+            "lng": 5.479977,
+            "lat": 51.442362,
+            "countryCode": "NL",
+            "uicCode": "8400206",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T10:21:00+0100",
+            "plannedTrack": "7",
+            "exitSide": "RIGHT",
+            "checkinStatus": "CHECKOUT",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "bd",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Breda",
+            "lng": 4.78005,
+            "lat": 51.595071,
+            "countryCode": "NL",
+            "uicCode": "8400131",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "1130",
+            "categoryCode": "IC",
+            "shortCategoryName": "IC",
+            "longCategoryName": "Intercity",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Intercity"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 0,
+              "routeIdxTo": 0,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 9,
+              "routeIdxTo": 9,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 0,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T09:44:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "5",
+              "cancelled": false,
+              "name": "Eindhoven",
+              "lng": 5.479977,
+              "lat": 51.442362,
+              "countryCode": "NL",
+              "uicCode": "8400206"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Eindhoven Strijp-S",
+              "lng": 5.45583343505859,
+              "lat": 51.4511108398438,
+              "countryCode": "NL",
+              "uicCode": "8400196"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Best",
+              "lng": 5.38916683197022,
+              "lat": 51.5099983215332,
+              "countryCode": "NL",
+              "uicCode": "8400112"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Boxtel",
+              "lng": 5.31912,
+              "lat": 51.58433,
+              "countryCode": "NL",
+              "uicCode": "8400129"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Oisterwijk",
+              "lng": 5.19416666030884,
+              "lat": 51.5822219848633,
+              "countryCode": "NL",
+              "uicCode": "8400482"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 5,
+              "plannedDepartureDateTime": "2019-11-18T10:08:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "2",
+              "plannedArrivalDateTime": "2019-11-18T10:06:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "2",
+              "cancelled": false,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Universiteit",
+              "lng": 5.05111122131348,
+              "lat": 51.564998626709,
+              "countryCode": "NL",
+              "uicCode": "8400594"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Reeshof",
+              "lng": 4.99444437026978,
+              "lat": 51.5736122131348,
+              "countryCode": "NL",
+              "uicCode": "8400598"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Gilze-Rijen",
+              "lng": 4.92611122131348,
+              "lat": 51.583610534668,
+              "countryCode": "NL",
+              "uicCode": "8400251"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 9,
+              "plannedDepartureDateTime": "2019-11-18T10:23:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "7",
+              "plannedArrivalDateTime": "2019-11-18T10:21:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "7",
+              "cancelled": false,
+              "name": "Breda",
+              "lng": 4.78005,
+              "lat": 51.595071,
+              "countryCode": "NL",
+              "uicCode": "8400131"
+            }
+          ],
+          "steps": [],
+          "crowdForecast": "LOW",
+          "punctuality": 100,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=1130&datetime=2019-11-18T09:44:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        }
+      ],
+      "overviewPolyLine": [],
+      "checksum": "b062c306_2",
+      "crowdForecast": "LOW",
+      "punctuality": 100,
+      "ctxRecon": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:44:00+01:00|plannedArrivalTime=2019-11-18T10:21:00+01:00|yearCard=false|excludeHighSpeedTrains=false",
+      "actualDurationInMinutes": 37,
+      "idx": 4,
+      "optimal": false,
+      "fares": [
+        {
+          "priceInCents": 2280,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 684,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 345312,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 3010,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 48500,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 582060,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1824,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 28800,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1129,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 3762,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1140,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 35900,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1505,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 1368,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 2258,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 912,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 60700,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1881,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        }
+      ],
+      "productFare": {
+        "priceInCents": 1140,
+        "product": "OVCHIPKAART_ENKELE_REIS",
+        "travelClass": "SECOND_CLASS",
+        "priceInCentsExcludingSupplement": 1140,
+        "discountType": "NO_DISCOUNT"
+      },
+      "fareOptions": {
+        "isInternationalBookable": false,
+        "isInternational": false,
+        "isEticketBuyable": true,
+        "isPossibleWithOvChipkaart": true
+      },
+      "type": "NS",
+      "shareUrl": {
+        "uri": "https://www.ns.nl/rpx?ctx=arnu%7CfromStation%3D8400206%7CtoStation%3D8400131%7CplannedFromTime%3D2019-11-18T09%3A44%3A00%2B01%3A00%7CplannedArrivalTime%3D2019-11-18T10%3A21%3A00%2B01%3A00%7CyearCard%3Dfalse%7CexcludeHighSpeedTrains%3Dfalse"
+      },
+      "realtime": true,
+      "routeId": "KVI="
+    },
+    {
+      "uid": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:51:00+01:00|plannedArrivalTime=2019-11-18T10:40:00+01:00|yearCard=false|excludeHighSpeedTrains=false|path=TRAIN_ns_SPR_5234,8400597,TRAIN_ns_IC_3631",
+      "plannedDurationInMinutes": 49,
+      "transfers": 1,
+      "status": "NORMAL",
+      "legs": [
+        {
+          "idx": "0",
+          "name": "SPR 5234",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Tilburg Universiteit",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|452918|1|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T09:51:00+0100",
+            "plannedTrack": "4",
+            "checkinStatus": "CHECKIN",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Station is Accessible",
+                "key": "SH",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "ehv",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Eindhoven",
+            "lng": 5.479977,
+            "lat": 51.442362,
+            "countryCode": "NL",
+            "uicCode": "8400206",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T10:22:00+0100",
+            "plannedTrack": "2",
+            "exitSide": "RIGHT",
+            "checkinStatus": "NOTHING",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "tb",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Tilburg",
+            "lng": 5.08393,
+            "lat": 51.560382,
+            "countryCode": "NL",
+            "uicCode": "8400597",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "5234",
+            "categoryCode": "SPR",
+            "shortCategoryName": "SPR",
+            "longCategoryName": "Sprinter",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Sprinter"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 4,
+              "routeIdxTo": 4,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 9,
+              "routeIdxTo": 9,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+ebfr, source AGO Manually, Entry in train for Wheelchairs",
+              "key": "EW",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 4,
+              "routeIdxTo": 4,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+ebfr, source AGO Manually, Entry in train for Wheelchairs",
+              "key": "EW",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 9,
+              "routeIdxTo": 9,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 4,
+              "plannedDepartureDateTime": "2019-11-18T09:51:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "4",
+              "plannedArrivalDateTime": "2019-11-18T09:43:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "4",
+              "cancelled": false,
+              "name": "Eindhoven",
+              "lng": 5.479977,
+              "lat": 51.442362,
+              "countryCode": "NL",
+              "uicCode": "8400206"
+            },
+            {
+              "notes": [],
+              "routeIdx": 5,
+              "plannedDepartureDateTime": "2019-11-18T09:54:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "1",
+              "plannedArrivalDateTime": "2019-11-18T09:54:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "1",
+              "cancelled": false,
+              "name": "Eindhoven Strijp-S",
+              "lng": 5.457549,
+              "lat": 51.450282,
+              "countryCode": "NL",
+              "uicCode": "8400196"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 6,
+              "plannedDepartureDateTime": "2019-11-18T10:00:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "1",
+              "plannedArrivalDateTime": "2019-11-18T10:00:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "1",
+              "cancelled": false,
+              "name": "Best",
+              "lng": 5.389222,
+              "lat": 51.509539,
+              "countryCode": "NL",
+              "uicCode": "8400112"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 7,
+              "plannedDepartureDateTime": "2019-11-18T10:09:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "6",
+              "plannedArrivalDateTime": "2019-11-18T10:07:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "6",
+              "cancelled": false,
+              "name": "Boxtel",
+              "lng": 5.319097,
+              "lat": 51.58485,
+              "countryCode": "NL",
+              "uicCode": "8400129"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Station is Accessible",
+                  "key": "SH",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 8,
+              "plannedDepartureDateTime": "2019-11-18T10:15:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "2",
+              "plannedArrivalDateTime": "2019-11-18T10:15:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "2",
+              "cancelled": false,
+              "name": "Oisterwijk",
+              "lng": 5.193581,
+              "lat": 51.58201,
+              "countryCode": "NL",
+              "uicCode": "8400482"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 9,
+              "plannedDepartureDateTime": "2019-11-18T10:23:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "2",
+              "plannedArrivalDateTime": "2019-11-18T10:22:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "2",
+              "cancelled": false,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            }
+          ],
+          "steps": [],
+          "crowdForecast": "LOW",
+          "punctuality": 92.3,
+          "crossPlatformTransfer": true,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=5234&datetime=2019-11-18T09:51:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        },
+        {
+          "idx": "2",
+          "name": "IC 3631 ",
+          "travelType": "PUBLIC_TRANSIT",
+          "direction": "Roosendaal",
+          "cancelled": false,
+          "changePossible": true,
+          "alternativeTransport": false,
+          "journeyDetailRef": "1|450458|0|784|18112019",
+          "origin": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T10:28:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T10:28:00+0100",
+            "plannedTrack": "3",
+            "checkinStatus": "NOTHING",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "tb",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Tilburg",
+            "lng": 5.08393,
+            "lat": 51.560382,
+            "countryCode": "NL",
+            "uicCode": "8400597",
+            "weight": -1,
+            "products": -1
+          },
+          "destination": {
+            "type": "STATION",
+            "prognosisType": "PROGNOSED",
+            "plannedTimeZoneOffset": 60,
+            "plannedDateTime": "2019-11-18T10:40:00+0100",
+            "actualTimeZoneOffset": 60,
+            "actualDateTime": "2019-11-18T10:40:00+0100",
+            "plannedTrack": "8",
+            "exitSide": "LEFT",
+            "checkinStatus": "CHECKOUT",
+            "notes": [
+              {
+                "value": "Station Accessible or Travel Assistance",
+                "key": "IS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "Travel Assistance available at this station",
+                "key": "SS",
+                "noteType": "ATTRIBUTE",
+                "priority": 0,
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              },
+              {
+                "value": "bd",
+                "key": "EK",
+                "noteType": "INFOTEXT",
+                "isPresentationRequired": false,
+                "category": "UNKNOWN"
+              }
+            ],
+            "name": "Breda",
+            "lng": 4.78005,
+            "lat": 51.595071,
+            "countryCode": "NL",
+            "uicCode": "8400131",
+            "weight": -1,
+            "products": -1
+          },
+          "product": {
+            "number": "3631",
+            "categoryCode": "IC",
+            "shortCategoryName": "IC",
+            "longCategoryName": "Intercity",
+            "operatorCode": "ns",
+            "operatorName": "NS",
+            "type": "TRAIN",
+            "displayName": "NS Intercity"
+          },
+          "notes": [
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 25,
+              "routeIdxTo": 25,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            },
+            {
+              "value": "+eas, source RAST attributonstation, durch TPSI berechnet",
+              "key": "ES",
+              "noteType": "ATTRIBUTE",
+              "priority": 0,
+              "routeIdxFrom": 29,
+              "routeIdxTo": 29,
+              "isPresentationRequired": false,
+              "category": "UNKNOWN"
+            }
+          ],
+          "messages": [],
+          "stops": [
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 25,
+              "departurePrognosisType": "PROGNOSED",
+              "plannedDepartureDateTime": "2019-11-18T10:28:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "actualDepartureDateTime": "2019-11-18T10:28:00+0100",
+              "plannedDepartureTrack": "3",
+              "plannedArrivalDateTime": "2019-11-18T10:27:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "plannedArrivalTrack": "3",
+              "cancelled": false,
+              "name": "Tilburg",
+              "lng": 5.08393,
+              "lat": 51.560382,
+              "countryCode": "NL",
+              "uicCode": "8400597"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Universiteit",
+              "lng": 5.05111122131348,
+              "lat": 51.564998626709,
+              "countryCode": "NL",
+              "uicCode": "8400594"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Tilburg Reeshof",
+              "lng": 4.99444437026978,
+              "lat": 51.5736122131348,
+              "countryCode": "NL",
+              "uicCode": "8400598"
+            },
+            {
+              "notes": [],
+              "passing": true,
+              "name": "Gilze-Rijen",
+              "lng": 4.92611122131348,
+              "lat": 51.583610534668,
+              "countryCode": "NL",
+              "uicCode": "8400251"
+            },
+            {
+              "notes": [
+                {
+                  "value": "Station Accessible or Travel Assistance",
+                  "key": "IS",
+                  "type": "A",
+                  "priority": 0
+                },
+                {
+                  "value": "Travel Assistance available at this station",
+                  "key": "SS",
+                  "type": "A",
+                  "priority": 0
+                }
+              ],
+              "routeIdx": 29,
+              "plannedDepartureDateTime": "2019-11-18T10:45:00+0100",
+              "plannedDepartureTimeZoneOffset": 60,
+              "plannedDepartureTrack": "8",
+              "arrivalPrognosisType": "PROGNOSED",
+              "plannedArrivalDateTime": "2019-11-18T10:40:00+0100",
+              "plannedArrivalTimeZoneOffset": 60,
+              "actualArrivalDateTime": "2019-11-18T10:40:00+0100",
+              "plannedArrivalTrack": "8",
+              "cancelled": false,
+              "name": "Breda",
+              "lng": 4.78005,
+              "lat": 51.595071,
+              "countryCode": "NL",
+              "uicCode": "8400131"
+            }
+          ],
+          "steps": [],
+          "crowdForecast": "LOW",
+          "punctuality": 100,
+          "shorterStock": false,
+          "journeyDetail": [
+            {
+              "type": "TRAIN_XML",
+              "link": {
+                "uri": "https://ews-rpx.ns.nl/mobile-api-serviceinfo?companycode=ns&ritnummer=3631&datetime=2019-11-18T10:28:00+01:00"
+              }
+            }
+          ],
+          "reachable": false
+        }
+      ],
+      "overviewPolyLine": [],
+      "checksum": "7daca3ec_2",
+      "crowdForecast": "LOW",
+      "punctuality": 92.3,
+      "ctxRecon": "arnu|fromStation=8400206|toStation=8400131|plannedFromTime=2019-11-18T09:51:00+01:00|plannedArrivalTime=2019-11-18T10:40:00+01:00|yearCard=false|excludeHighSpeedTrains=false",
+      "actualDurationInMinutes": 49,
+      "idx": 5,
+      "optimal": false,
+      "fares": [
+        {
+          "priceInCents": 2280,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 684,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 345312,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 3010,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 48500,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 582060,
+          "product": "BUSINESS_CARD_TRAJECT_VRIJ_JAAR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1824,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 28800,
+          "product": "TRAJECT_VRIJ_JAAR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1129,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 3762,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1140,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 35900,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1505,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 1368,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 2258,
+          "product": "OVCHIPKAART_RETOUR",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "DISCOUNT_40_PERCENT"
+        },
+        {
+          "priceInCents": 912,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "SECOND_CLASS",
+          "discountType": "DISCOUNT_20_PERCENT"
+        },
+        {
+          "priceInCents": 60700,
+          "product": "TRAJECT_VRIJ_MAAND",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        },
+        {
+          "priceInCents": 1881,
+          "product": "OVCHIPKAART_ENKELE_REIS",
+          "travelClass": "FIRST_CLASS",
+          "discountType": "NO_DISCOUNT"
+        }
+      ],
+      "productFare": {
+        "priceInCents": 1140,
+        "product": "OVCHIPKAART_ENKELE_REIS",
+        "travelClass": "SECOND_CLASS",
+        "priceInCentsExcludingSupplement": 1140,
+        "discountType": "NO_DISCOUNT"
+      },
+      "fareOptions": {
+        "isInternationalBookable": false,
+        "isInternational": false,
+        "isEticketBuyable": true,
+        "isPossibleWithOvChipkaart": true
+      },
+      "type": "NS",
+      "shareUrl": {
+        "uri": "https://www.ns.nl/rpx?ctx=arnu%7CfromStation%3D8400206%7CtoStation%3D8400131%7CplannedFromTime%3D2019-11-18T09%3A51%3A00%2B01%3A00%7CplannedArrivalTime%3D2019-11-18T10%3A40%3A00%2B01%3A00%7CyearCard%3Dfalse%7CexcludeHighSpeedTrains%3Dfalse"
+      },
+      "realtime": true,
+      "routeId": "KVI="
+    }
+  ],
+  "scrollRequestBackwardContext": "1|OB|MTµ11µ205011µ205011µ205060µ205060µ0µ0µ325µ205009µ1µ-2147483626µ0µ1µ2|PDHµc5bdb36683f4029f792f2ec0fe029948",
+  "scrollRequestForwardContext": "1|OF|MTµ11µ205071µ205071µ205120µ205120µ0µ0µ325µ205065µ5µ-2147483626µ0µ1µ2|PDHµc5bdb36683f4029f792f2ec0fe029948"
+}

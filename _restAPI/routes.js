@@ -1,17 +1,23 @@
-//construct bot requirements
-const botconfig = require("./botconfig.json");
+//construct requirements
+const botconfig = require("../_config/bot_config.json")
+const embed = require("../_config/embed.json")
+const functions = require('../_config/functions');
 const fs = require('fs');
 const morgan = require('morgan');
 const express = require('express');
-var path = require('path');
+const path = require('path')
 
-var routes = function (app) {
-  
+
+
+const routes = function (app) {
+
     // create a write stream (in append mode)
     var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
 
     // adding morgan to log HTTP requests
-    app.use(morgan(botconfig.morgan))
+    app.use(morgan(botconfig.morgan, {
+        stream: accessLogStream
+    }))
 
     // JSON parser
     app.use(express.json());
@@ -30,11 +36,11 @@ var routes = function (app) {
     app.get('/ns-bot/serverlist', (req, res) => {
         if (!req.header('x-key')) {
             return res.send({ "message": "Forbidden" });
-        } else if (req.header('x-key') == process.env.MY_SECRET) {
+        } else if (req.header('x-key') == botconfig.my_secret) {
 
             try {
 
-                let serverlistJSON = JSON.parse(fs.readFileSync("./_server/discordserverlist.json", "utf8"))
+                let serverlistJSON = JSON.parse(fs.readFileSync("./_server/sero_serverlist.json", "utf8"))
                 return res.send(serverlistJSON);
 
             } catch (err) {
@@ -51,11 +57,11 @@ var routes = function (app) {
     app.get('/ns-bot/commandlist', (req, res) => {
         if (!req.header('x-key')) {
             return res.send({ "message": "Forbidden" });
-        } else if (req.header('x-key') == process.env.MY_SECRET) {
+        } else if (req.header('x-key') == botconfig.my_secret) {
 
             try {
 
-                let commandlistJSON = JSON.parse(fs.readFileSync("./_server/discordcommandlist.json", "utf8"))
+                let commandlistJSON = JSON.parse(fs.readFileSync("./_server/sero_commandlist.json", "utf8"))
                 return res.send(commandlistJSON);
 
             } catch (err) {
@@ -72,7 +78,7 @@ var routes = function (app) {
     app.get('/ns-bot/prefix', (req, res) => {
         if (!req.header('x-key')) {
             return res.send({ "message": "Forbidden" });
-        } else if (req.header('x-key') == process.env.MY_SECRET) {
+        } else if (req.header('x-key') == botconfig.my_secret) {
 
             try {
 
@@ -104,7 +110,7 @@ var routes = function (app) {
     app.post("/ns-bot/prefix", function (req, res) {
         if (!req.header('x-key')) {
             return res.send({ "message": "Forbidden" });
-        } else if (req.header('Content-Type') == 'application/json' || req.header('x-key') == process.env.MY_SECRET) {
+        } else if (req.header('Content-Type') == 'application/json' || req.header('x-key') == botconfig.my_secret) {
 
             try {
 
@@ -144,7 +150,7 @@ var routes = function (app) {
     app.get('/ns-bot/defaultchannel', (req, res) => {
         if (!req.header('x-key')) {
             return res.status(403).send({ "message": "Forbidden" });
-        } else if (req.header('x-key') == process.env.MY_SECRET) {
+        } else if (req.header('x-key') == botconfig.my_secret) {
 
             try {
 
@@ -176,7 +182,7 @@ var routes = function (app) {
     app.post("/ns-bot/defaultchannel", function (req, res) {
         if (!req.header('x-key')) {
             return res.send({ "message": "Forbidden" });
-        } else if (req.header('Content-Type') == 'application/json' || req.header('x-key') == process.env.MY_SECRET) {
+        } else if (req.header('Content-Type') == 'application/json' || req.header('x-key') == botconfig.my_secret) {
 
             try {
 
@@ -211,7 +217,6 @@ var routes = function (app) {
         }
     });
 
-  
     // curl -G https://ns-bot-v2.glitch.me/ns-bot/serverlist -H "x-key: jtpgW5KG72rqQx2N"
     // curl -G https://ns-bot-v2.glitch.me/ns-bot/commandlist -H "x-key: jtpgW5KG72rqQx2N"
     // curl -G https://ns-bot-v2.glitch.me/ns-bot/prefix -H "x-key: jtpgW5KG72rqQx2N"
@@ -221,7 +226,6 @@ var routes = function (app) {
     // curl -X POST -H "Content-Type: application/json" -d "{\"server\": \"565104867002155008\", \"defaultchannel\": \"580000255173722112\"}" https://ns-bot-v2.glitch.me/ns-bot/defaultchannel -H "x-key: jtpgW5KG72rqQx2N"
 
     //process.env.MY_SECRET
-  
 };
 
 module.exports = routes;
